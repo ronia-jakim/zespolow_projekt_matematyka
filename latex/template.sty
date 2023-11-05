@@ -1,0 +1,335 @@
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{template}
+
+\RequirePackage{sectsty}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+
+\RequirePackage[fontsize=12pt]{fontsize}
+
+\RequirePackage{geometry}
+%\geometry {
+%    a4paper,
+%    total={170mm, 237mm}
+%}
+
+\geometry{a4paper, total={170mm, 252mm}, top=22mm}
+
+\RequirePackage[default]{sourcesanspro} % czcionka
+\RequirePackage{mathastext}
+
+\RequirePackage{microtype}
+
+\RequirePackage{amssymb}
+\RequirePackage{amsmath}
+\RequirePackage{mathtools}
+\RequirePackage{dsfont}
+\RequirePackage{wasysym}
+
+\RequirePackage{tikz}
+
+\RequirePackage{enumitem}
+
+\RequirePackage{graphicx}
+\graphicspath{ {./} }
+
+\RequirePackage{eso-pic}
+
+\RequirePackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+
+\RequirePackage{phaistos}
+
+\RequirePackage{marvosym}
+
+\renewcommand\labelitemi{\scalebox{1}{\color{green}\Coffeecup}}
+
+\setlength{\parindent}{0pt}
+\RequirePackage[skip=7pt]{parskip}
+
+\RequirePackage{xparse}
+
+
+%%================================================================%%
+
+%% RZECZY PRZYDATNE
+
+%%================================================================%%
+
+\RequirePackage{ stmaryrd }
+
+\DeclareMathOperator{\coker}{Coker}
+\DeclareMathOperator{\coim}{Coim}
+
+\DeclareMathOperator{\img}{im}
+\DeclareMathOperator{\ob}{Ob}
+
+\DeclareMathOperator{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\C}{\mathbb{C}}
+\DeclareMathOperator{\N}{\mathbb{N}}
+\DeclareMathOperator{\Q}{\mathbb{Q}}
+
+
+\renewcommand{\implies}{\Rightarrow}
+\renewcommand{\impliedby}{\Leftarrow}
+
+\newcommand{\set}[1]{\mathcal{#1}}
+
+\DeclareDocumentCommand\prob{g g}{\mathbb{P}
+    \IfNoValueTF {#2}
+      {\IfNoValueF {#1} {\left[#1\right]}}
+      {\left[#1\;|\;#2\right]}
+}
+
+
+\DeclareDocumentCommand\expected{g g}{\mathbb{E}
+    \IfNoValueTF {#2}
+      {\IfNoValueF {#1} {\left[#1\right]}}
+      {\left[#1\;|\;#2\right]}
+}
+
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname format#1\endcsname
+    \csname format#1\endcsname
+  \else
+    \csname the#1\endcsname\quad % default
+  \fi
+}
+\let\latexl@section\l@section
+\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+
+\NewDocumentCommand{\datesec}{o m m}{%
+    \renewcommand\thesection{#2}
+    \IfNoValueTF{#1}
+        {\section{#3}}
+        {\section[#1]{#3}}
+}
+
+\renewcommand{\hat}[1]{\widehat{#1}}
+
+\renewcommand{\phi}{\varphi}
+
+
+%%================================================================%%
+
+%% KOLORKI
+
+%%================================================================%%
+
+\RequirePackage{xcolor}
+
+\definecolor{red}{HTML}{CB7876}
+\definecolor{green}{HTML}{8BA47C}
+\definecolor{yellow}{HTML}{E6B12C}
+\definecolor{orange}{HTML}{CF7438}
+\definecolor{blue}{HTML}{32769B}
+\definecolor{purple}{HTML}{8C7DA8}%{64557B}
+
+
+\allsectionsfont{\color{purple}}
+
+\newcommand{\buff}[1]{\textbf{\color{orange}#1}}
+\newcommand{\acc}[1]{{\color{blue}\slshape #1}}
+
+
+%%================================================================%%
+
+%% TWIERDZENIA ETC.
+
+%%================================================================%%
+
+\RequirePackage{amsthm}
+\RequirePackage{thmtools}
+\RequirePackage{tcolorbox}
+
+\RequirePackage[framemethod=TikZ]{mdframed}
+
+\tcbuselibrary{theorems}
+
+\renewenvironment{proof}{{\bfseries\color{orange} Dowód}$ $\newline}{
+  \begin{flushright}\includegraphics[width=30pt]{~/uni-stuff/2023-2024/piwo.png}\end{flushright}$ $\newline
+}
+
+
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\large\color{orange!80!red},
+    bodyfont=\normalfont,
+    notebraces={: }{},
+    notefont=\color{orange},
+    headformat=\NAME$\;$\NUMBER\NOTE,
+    postheadspace=\newline,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=red!50!orange, backgroundcolor=yellow!7,
+        skipabove=3mm, skipbelow=3mm
+    }
+]{twierdzonka}
+
+\declaretheorem[
+  name=Twierdzenie,
+  numberwithin=section,
+  style=twierdzonka,
+]{theorem}
+
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\large\color{purple!80!blue},
+    bodyfont=\normalfont,
+    notebraces={: }{},
+    notefont=\color{purple},
+    headformat=\NAME$\;$\NUMBER\NOTE,
+    postheadspace=\newline,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=purple, backgroundcolor=purple!6!pink!3,
+        skipabove=3mm, skipbelow=3mm
+    }
+]{uwagi-lematy}
+
+\declaretheorem[
+  name=Uwaga,
+  numberlike=theorem,
+  style=uwagi-lematy,
+]{uwaga}
+
+\declaretheorem[
+  name=Lemat,
+  numberlike=theorem,
+  style=uwagi-lematy,
+]{lemma}
+
+\declaretheorem[
+  name=Fakt,
+  numberlike=theorem,
+  style=uwagi-lematy,
+]{fact}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\large\color{green!80!black},
+    bodyfont=\normalfont,
+    notebraces={: }{},
+    notefont=\color{green},
+    headformat=\NAME$\;$\NUMBER\NOTE,
+    postheadspace=\newline,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=green, backgroundcolor=yellow!5,
+        skipabove=3mm, skipbelow=3mm
+    }
+]{defbox}
+
+
+\declaretheorem[
+  name=Definicja,
+  numberwithin=section,
+  style=defbox
+]{definition}
+
+\newtheoremstyle{przykladziki}
+  {3pt}
+  {3pt}
+  {}
+  {}
+  {\color{green}\large\bfseries}
+  {\newline}
+  {.5em}
+  {\thmname{#1}\thmnumber{ #2}\thmnote{ : \textbf{#3}}}
+
+\declaretheorem[
+  name=Przykład(y),
+  numberwithin=section,
+  style=przykladziki
+]{ex}
+
+\newenvironment{example}[1][ ]{
+    \begin{ex}[#1]{$ $\vspace{-25pt}\\}
+    \begin{enumerate}
+}{
+    \end{enumerate}
+    \end{ex}
+}
+
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{blue!80!black},
+    bodyfont=\normalfont,
+    notebraces={: }{},
+    notefont=\color{blue},
+    headformat=\NAME\NUMBER\NOTE,
+    postheadspace=\newline,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=blue!60!purple!50, backgroundcolor=blue!2,
+        skipabove=3mm, skipbelow=3mm
+    }
+]{dygresyja}
+
+\declaretheorem[
+  name=Dygresja,
+  numbered=no,
+  style=dygresyja,
+]{dygresja}
+
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{red!80!black} ,
+    bodyfont=\normalfont,
+    notebraces={: }{},
+    notefont=\color{red},
+    headformat=\NAME$\;$\NUMBER\NOTE,
+    postheadspace=\newline,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=red!60!purple!50, backgroundcolor=red!5,
+        skipabove=3mm, skipbelow=3mm
+    }
+]{zadanka}
+
+\declaretheorem[
+  name=Zadanie ,
+  style=zadanka,
+]{problem}
+
+\renewcommand{\theproblem}{\arabic{problem}}
+
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{red!80!black} ,
+    bodyfont=\normalfont,
+    notebraces={: }{},
+    notefont=\color{red},
+    headformat=\NAME\NUMBER\NOTE,
+    postheadspace=\newline,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=green!60!orange!50, %, backgroundcolor=red!2,
+        skipabove=3mm, skipbelow=3mm
+    }
+]{rozw_moj}
+
+\declaretheorem[
+  name=Rozwiązanie,
+  numbered=no,
+  style=rozw_moj,
+  %shaded={bgcolor=black!10, rulecolor=red!30!black!20, rulewidth=1pt, textwidth=\textwidth}
+]{solution}
+
+%%================================================================%%
+
+%% OBRAZKI && DIAGRAMY
+
+%%================================================================%%
+
+\usetikzlibrary{cd, patterns, patterns.meta, decorations.pathmorphing}
+
+\endinput
