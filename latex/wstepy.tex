@@ -1,3 +1,30 @@
 \section{Wstęp}
 
+\subsection{Rozmaitość Riemannowska i tensor metryczny}
 
+Pojęcie gładkiej rozmaitości pozwala na opisywanie konstrukcji geometrycznych poprzez lokalne sprowadzenie ich za pomocą gładkich map do podzbiorów $\R^n$ (lub $\C^n$). Do dowolnej gładkiej rozmaitości $M$ wymiaru $n$ możemy dołączyć wiązkę styczną $TM$, która dla dowolnego punktu $p\in M$ zawiera przestrzeń liniową $T_pM$ nazywaną przestrzenią styczną do $M$ w punkcie $p$. 
+
+Istnieje więc w matematyce sposób na rozważanie dowolnych przestrzeni przez pryzmat dobrze zbadanych $\R^n$ oraz dopisanie do nich struktury przestrzeni liniowej dzięki przestrzeniom stycznym. Idąc dalej, możemy zastanowić się jakie inne właściwości przestrzeni euklidesowych możemy uogólnić na abstrakcyjne przestrzenie $T_pM$.
+
+Rozmaitość Riemanna to gładka, rzeczywista rozmaitość $M$ z rodziną dwuliniowych funkcji 
+$$g_p:T_pM\times T_pM\to \R$$ 
+zdefiniowanych w każdym punkcie $p\in M$. Każda taka funkcja $g_p$ jest dodatnio określonym iloczynem wewnętrznym na $T_pM$, a więc pociąga za sobą normę 
+$$\|v\|_p=\sqrt{g_p(v, v)}.$$
+W ten sposób możemy na $TM$ określić funkcję $g$, która dowolnym dwóm wektorom $X_p,Y_p$ zaczepionym w tym samym punkcie $p\in M$ przypisuje ich odpowiednik iloczynu skalarnego $g_p(X_p,Y_p)$. Tak określony funkcjonał nazywamy tensorem metrycznym, lub w skrócie metryką, na rozmaitości $M$.
+%Funkcja $g$ określona na $TM$, która wektorowi zaczepionemu w punkcie $p$ przypisuje jego normę $\|\cdot\|_p$ jest nazywana tensorem metrycznym, lub w skrócie metryką, na rozmaitości $M$.
+
+Dowolna mapa $(U,\phi)$ na $n$-wymiarowej Riemannowskiej rozmaitości $M$ zawierająca punkt $p\in M$ pociąga za sobą bazę przestrzeni $T_pM$
+$$\left\{ \frac{\partial}{\partial\phi_1} , ... , \frac{\partial}{\partial\phi_n} \right\}$$
+w takim razie funkcjonał $g_p$ zapisuje się macierzą o wymiarze $n\times n$. Wyrazami takiej macierzy są wartości $g_p$ na kolejnych parach wektorów bazowych.
+
+Mając bazę dualną do $\{\frac{\partial}{\partial\phi_i}\}$ możemy zapisać tensor metryczny za pomocą prawdziwego tensora
+$$g=\sum_{i,j\leq n}g_{i,j}d\phi^i\otimes d\phi^j$$
+gdzie $g_{i,j}$ to wyrazy macierzy wspomnianej wyżej, a $d\phi^i$ to elementy bazy dualnej do $\frac{\partial}{\partial\phi_i}$
+
+
+\subsection{Czarne dziury Schwarzschild'a}
+
+Jednym z najprostszych, a przez to najczęściej używanych, sposobów opisu przestrzeni wokół czarnej dziury jest modelowanie tej osobliwości jako sferycznie symetrycznego obiektu o pewnej masie, pozbawionego ładunku elektrycznego i przyśpieszenia kątowego. Tak zdefiniowane czarne dziury nazywamy czarnymi dziurami Schwarzschild'a, na pamiątkę niemieckiego fizyka który jako pierwszy znalazł dokładne rozwiązanie równania Einsteina.
+
+Wspomniane rozwiązanie nazywa się metryką Schwarzschild'a:
+$$g=-c^2d\tau^2=- \left( 1-\frac{r_s}{r}  \right) c^2dt^2 + \left(1-\frac{r_s}{r} \right)^{-1}dr^2 +r^2d\Omega^2 $$
