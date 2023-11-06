@@ -2,7 +2,23 @@
 
 \subsection{Rozmaitość Riemannowska i tensor metryczny}
 
-Pojęcie gładkiej rozmaitości pozwala na opisywanie konstrukcji geometrycznych poprzez lokalne sprowadzenie ich za pomocą gładkich map do podzbiorów $\R^n$ (lub $\C^n$). Do dowolnej gładkiej rozmaitości $M$ wymiaru $n$ możemy dołączyć wiązkę styczną $TM$, która dla dowolnego punktu $p\in M$ zawiera przestrzeń liniową $T_pM$ nazywaną przestrzenią styczną do $M$ w punkcie $p$. 
+Pojęcie gładkiej rozmaitości pozwala na opisywanie konstrukcji geometrycznych poprzez lokalne sprowadzenie ich za pomocą gładkich map do podzbiorów $\R^n$ (lub $\C^n$). To znaczy, że mając pewną abstrakcyjną gładką rozmaitość $M$, dostajemy jednocześnie dostęp do rodziny par $\{(U_\alpha,\phi_\alpha\}$, gdzie zbiory $\{U_\alpha\}$ tworzą otwarte pokrycie $M$, a 
+$$\phi_\alpha:U_\alpha\to V_\alpha\subseteq \R^n$$
+jest gładką, ciągła funkcją między $U_\alpha$ a podzbiorem $V_\alpha\subseteq\R^n$. Takie funkcje nazywamy dyfeomorfizmami. Warto tutaj zaznaczyć, że liczba $n$ jest stała dla całej rozmaitości i dzięki temu pojęcie wymiaru rozmaitości $M$, $\dim M=n$, jest dobrze określone.
+
+Biorąc dowolny punkt $p\in M$ możemy dla niego znaleźć pewną mapę $(U_\alpha,\phi_\alpha)$ taką, że $p\in U_\alpha$. Ponieważ $\phi_\alpha(U_\alpha)$ jest pewnym obiektem w $\R^n$, to możemy mówić o wektorach do niego stycznych. Nasuwa się więc pytanie, czy możemy pojęcie styczności wektora do obiektu uogólnić do styczności wektorów do rozmaitości różniczkowalnych. Idąc tym tokiem myślenia bardzo szybko trafiamy na pojęcie przestrzeni stycznej do $M$ w punkcie $p$: $T_pM$. 
+
+Bardzo ciekawą własnością przestrzeni stycznych jest ich liniowość, to jest obiekt $T_pM$ jest przestrzenią liniową wymiaru $n$. Wybierając mapę $(U, \phi)$ wokół punktu $p\in M$ dostajemy od razu bazę na $T_pM$, której elementy zwyczajowo oznaczamy
+$$\{ \frac{\partial}{\partial\phi_1} , ... , \frac{\partial}{\partial\phi_n} \}.$$
+
+
+
+
+
+
+
+
+Do dowolnej gładkiej rozmaitości $M$ wymiaru $n$ możemy dołączyć wiązkę styczną $TM$, która dla dowolnego punktu $p\in M$ zawiera przestrzeń liniową $T_pM$ nazywaną przestrzenią styczną do $M$ w punkcie $p$. 
 
 Istnieje więc w matematyce sposób na rozważanie dowolnych przestrzeni przez pryzmat dobrze zbadanych $\R^n$ oraz dopisanie do nich struktury przestrzeni liniowej dzięki przestrzeniom stycznym. Idąc dalej, możemy zastanowić się jakie inne właściwości przestrzeni euklidesowych możemy uogólnić na abstrakcyjne przestrzenie $T_pM$.
 

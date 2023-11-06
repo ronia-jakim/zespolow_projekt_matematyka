@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1699200677 "main.tex" "main.pdf" "main" 1699200678 0
+["pdflatex"] 1699278879 "main.tex" "main.pdf" "main" 1699278880 0
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1689853683 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm" 1689853683 1648 77a748afe0a406be1ac3f29e1cd365cb ""
@@ -226,12 +226,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1694260517 4623317 a14e403ea671a9bc12f23e543c6a500e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1694260449 8204214 970c5842e707b5e5d3ac77ac394d7e44 ""
-  "main.aux" 1699200678 979 918f442e08a51de348be80012efa4d7c "pdflatex"
-  "main.out" 1699200678 564 d1d64c939ee44b83f68801b24a45d620 "pdflatex"
+  "main.aux" 1699278880 979 0835f70ce1caf1d29cdfa1e92de19637 "pdflatex"
+  "main.out" 1699278880 564 d1d64c939ee44b83f68801b24a45d620 "pdflatex"
   "main.tex" 1699190242 411 a7342b77059bdae135b49bef8d7c530f ""
-  "main.toc" 1699200678 267 735f9d2b21b04bba3331080421e664ab "pdflatex"
+  "main.toc" 1699278880 267 646825e791142a34e3bb3a7b2eadadaf "pdflatex"
   "template.sty" 1699189977 7406 e37fcf854246f7fa67661481323bf7ff ""
-  "wstepy.tex" 1699200676 3025 1446c5ed8f488b6583b268142594afd0 ""
+  "wstepy.tex" 1699278879 4437 aaabb4bde53e2249a27f1c6704aaadab ""
   (generated)
   "main.aux"
   "main.log"
