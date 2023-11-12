@@ -1,59 +1,52 @@
+from matplotlib.lines import lineStyles
 import numpy as np
 import matplotlib.pyplot as plt
 
 G = 6.6743015*(10**(-10)) # stała grawitacyjna
 C = 299792458             # prędkość światła
 
-def A (pos, rs):
-    return 1 - (rs / pos)
+mass = 10**27
 
-# co się dzieje z polem grawitacyjnym g, kiedy chodzimy po kole wokół czarnej dziury
-# to znaczy, że czas jest stały, promień i phi się zmienia, theta jest stale równa pi
-def g_na_annulusie (mass, r0, phi0, vr, vphi, n):
-    
-    # promień Schwarzschilda
-    rs = 1#(2 * G * mass) / (C**2) 
-    print(rs)
+rs = (2 * G * mass) / (C * C)
 
-    xlst = []
-    ylst = []
+print(rs)
 
-    r = rs + r0 
-    phi = phi0
+# theta = pi/2
 
-    x = r * np.cos(phi)
-    xlst.append(x)
+upper = 300
 
-    y = r * np.sin(phi)
-    ylst.append(y)
+x = np.linspace(-rs-upper, -rs-1, upper) 
+x = np.concatenate([x, np.linspace(rs+1, rs+upper, upper)])
 
-    i = 0
-    
-    print(A(r, rs))
+y = np.linspace(-rs-upper, -rs-1, upper) 
+y = np.concatenate([y, np.linspace(rs+1, rs+upper, upper)])
 
-    while i < n:
-        g = (-A(r, rs) ) + ( ( 1 / A(r, rs) ) * vr * vr ) + r * r * vphi * vphi 
+x, y = np.meshgrid(x, y)
 
-        dx = (r + vr) * np.cos(phi + vphi) - r * np.cos(phi)
-        dy = (r + vr) * np.sin(phi + vphi) - r * np.sin(phi)
+#print(x)
 
-        x = r * np.cos(phi) + dx - g
-        xlst.append(x)
+#g = np.sqrt(np.square(x) + np.square(y))
 
-        y = r * np.sin(phi) + dy - g
-        ylst.append(y)
+g = ( 1 / ( 1 - rs / np.sqrt(x*x + y*y) ) ) + (x * x + y * y)
+print(np.min(g))
 
-        r = np.sqrt(x*x + y*y)
-        phi = np.arctan(y / x)
+#levels = np.linspace(10000, 200000, 50000)
 
-        i += 1
+cp = plt.contour(x, y, g, 20, colors='black')#, linestyles='dashed')
 
-    print(xlst)
-    print(ylst)
-    
-    plt.plot(xlst, ylst)
-    plt.show()
+plt.clabel(cp, inline=1, fontsize=10)
+
+cp = plt.contourf(x, y, g, 20)
+
+plt.xlabel('x')
+plt.ylabel('y')
+
+th = np.arange(-3.14,3.14,0.01)
+r_circle = np.arange(0, rs, 0.5)
+for i in r_circle:
+    plt.plot( i*np.cos(th), i*np.sin(th), color="white")
 
 
-g_na_annulusie(10*(30), 2, 20, 5, 5, 30)
-    
+plt.plot( rs*np.cos(th), rs*np.sin(th), color="black")
+
+plt.show()
