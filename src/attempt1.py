@@ -1,7 +1,7 @@
 from matplotlib.lines import lineStyles
 import numpy as np
 import matplotlib.pyplot as plt
-
+ 
 G = 6.6743015*(10**(-10)) # stała grawitacyjna
 C = 299792458             # prędkość światła
 
