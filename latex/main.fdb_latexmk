@@ -1,9 +1,23 @@
 # Fdb version 4
+<<<<<<< HEAD
+["bibtex main"] 1699793343 "main.aux" "main.bbl" "main" 1699794231 0
+  "./literatura.bib" 1699790312 573 6bd59de15582c313ccc6c4b3860e567d ""
+  "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1689853683 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "main.aux" 1699794231 1691 5e358d1147db5ac98a87117688bba3d8 "pdflatex"
+  (generated)
+  "main.bbl"
+  "main.blg"
+  (rewritten before read)
+["pdflatex"] 1699794230 "main.tex" "main.pdf" "main" 1699794231 0
+=======
 ["pdflatex"] 1699278879 "main.tex" "main.pdf" "main" 1699278880 0
+>>>>>>> fbb51673c34c4bb7061bcf9ce358e1cc1893cda7
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1689853683 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm" 1689853683 1648 77a748afe0a406be1ac3f29e1cd365cb ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.tfm" 1689853683 37016 442637758ed935c1c5c22443691f4bf5 ""
+  "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-It-tlf-t1--base.tfm" 1689853683 1848 e2f45546755035c2f33bf301533311da ""
+  "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-It-tlf-t1.tfm" 1689853683 32512 ec243704740ad1ec49e8dc73a99dd8e2 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1--base.tfm" 1689853683 1652 31b9d596c0c8dcc7bcfc0431833ece08 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1.tfm" 1689853683 37576 ac3ddef6397b06e0361b81f77f4ab180 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1689853683 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
@@ -18,19 +32,22 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1689853683 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1689853683 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1689853683 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/marvosym/umvs.tfm" 1689853683 1772 135d23849cb646acc6bb1ae8d73e3f78 ""
   "/usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary10.tfm" 1689853683 848 f478e0761563bbc369eca609a1741348 ""
   "/usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary8.tfm" 1689853683 848 6125cdd3627e68d3db8013b98e587508 ""
   "/usr/share/texmf-dist/fonts/tfm/public/wasy/wasy10.tfm" 1689853683 908 375dcd194b89b9cc9481ab62f2da0667 ""
   "/usr/share/texmf-dist/fonts/tfm/public/wasy/wasy8.tfm" 1689853683 904 a3deb54664adaaa632c6cdee911ffe34 ""
   "/usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb" 1689853683 356260 5bc504cea2bf4f3148de985d938ed606 ""
+  "/usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb" 1689853683 263595 c7d0bf539613db43888d746e8e621f5b ""
   "/usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb" 1689853683 336785 795f953d37ac49dd5bce485becd006cc ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1689853683 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1689853683 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1689853683 36741 fa121aac0049305630cf160b86157ee4 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1689853683 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1689853683 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1689853683 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb" 1689853683 91705 188e103f30c94f64bce1570c4b989d07 ""
   "/usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.vf" 1689853683 1728 b87be699681a04d54541fcaa47fe285c ""
+  "/usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-It-tlf-t1.vf" 1689853683 1728 cd0ad4aba341a5f4c4f098074aa956aa ""
   "/usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1.vf" 1689853683 1732 92bc4ab7a012370b497bd8030a4c8332 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1689853683 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1689853683 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -169,6 +186,7 @@
   "/usr/share/texmf-dist/tex/latex/ly1/ly1enc.def" 1689853683 12104 e872d1756487ac02d8da3f958f4e1d25 ""
   "/usr/share/texmf-dist/tex/latex/ly1/ly1ptm.fd" 1689853683 1053 1946f431f0fed8f7fd7d097237037354 ""
   "/usr/share/texmf-dist/tex/latex/marvosym/marvosym.sty" 1689853683 9393 ceaf2ea8eb2c81fdb168323fc5fffc89 ""
+  "/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd" 1689853683 111 395c88825a74c0d7a4afff69645f4d03 ""
   "/usr/share/texmf-dist/tex/latex/mathastext/mathastext.sty" 1689853683 107034 000a73303457d8add6543a51d0a64a8a ""
   "/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty" 1689853683 62269 5c1837a5bc5db4c0d255eedc225ca44b ""
   "/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty" 1689853683 5582 a43dedf8e5ec418356f1e9dfe5d29fc3 ""
@@ -180,6 +198,7 @@
   "/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg" 1689853683 22906 7a8d9f8766e60f694cdde7648421c2ab ""
   "/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg" 1689853683 5929 0e1d31c98c10fece90f470d5746ecdd6 ""
   "/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg" 1689853683 5594 45ca1ba048c2fa6267d5419cc463d804 ""
+  "/usr/share/texmf-dist/tex/latex/microtype/mt-mvs.cfg" 1689853683 2354 480e74d243e6ba37e8bd1f2e31d5ecbf ""
   "/usr/share/texmf-dist/tex/latex/mweights/mweights.sty" 1689853683 4953 67f29a12ea26221103fce6bae3433e60 ""
   "/usr/share/texmf-dist/tex/latex/needspace/needspace.sty" 1689853683 852 0e34dbb72efc69fa07602405ad95585e ""
   "/usr/share/texmf-dist/tex/latex/parskip/parskip.sty" 1689853683 4288 94714aa7f535440f33181fec52a31963 ""
@@ -224,6 +243,17 @@
   "/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty" 1689853683 2245 c8a4088d07cffc2e5207730c738edd76 ""
   "/usr/share/texmf-dist/tex/latex/zref/zref-base.sty" 1689853683 20785 71a3d72ab517959a6979c27e6176bec1 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
+<<<<<<< HEAD
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1692984530 4623317 a14e403ea671a9bc12f23e543c6a500e ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1692984505 8204232 43b33a02560f687eef0a490aba0fedce ""
+  "main.aux" 1699794231 1691 5e358d1147db5ac98a87117688bba3d8 "pdflatex"
+  "main.bbl" 1699793343 302 c1f816bbfe25b6cd18135ef289e0a04a "bibtex main"
+  "main.out" 1699794231 564 d1d64c939ee44b83f68801b24a45d620 "pdflatex"
+  "main.tex" 1699789230 465 750a126db04d985bab8413b8b0898630 ""
+  "main.toc" 1699794231 267 646825e791142a34e3bb3a7b2eadadaf "pdflatex"
+  "template.sty" 1699258072 7406 e37fcf854246f7fa67661481323bf7ff ""
+  "wstepy.tex" 1699794230 7469 b9e1546656b31e14228dcb64b3017888 ""
+=======
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1694260517 4623317 a14e403ea671a9bc12f23e543c6a500e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1694260449 8204214 970c5842e707b5e5d3ac77ac394d7e44 ""
   "main.aux" 1699278880 979 0835f70ce1caf1d29cdfa1e92de19637 "pdflatex"
@@ -232,6 +262,7 @@
   "main.toc" 1699278880 267 646825e791142a34e3bb3a7b2eadadaf "pdflatex"
   "template.sty" 1699189977 7406 e37fcf854246f7fa67661481323bf7ff ""
   "wstepy.tex" 1699278879 4437 aaabb4bde53e2249a27f1c6704aaadab ""
+>>>>>>> fbb51673c34c4bb7061bcf9ce358e1cc1893cda7
   (generated)
   "main.aux"
   "main.log"

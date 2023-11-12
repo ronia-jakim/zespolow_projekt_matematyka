@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Arch Linux)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Database file #1: literatura.bib
+Warning--entry type for "notatkiUoCSD" isn't style-file defined
+--line 11 of file literatura.bib
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            509 strings with 4176 characters,
+and the built_in function-call counts, 451 in all, are:
+= -- 40
+> -- 14
+< -- 0
++ -- 7
+- -- 4
+* -- 18
+:= -- 82
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 19
+empty$ -- 45
+format.name$ -- 4
+if$ -- 94
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 16
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 11
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 0
+while$ -- 4
+width$ -- 3
+write$ -- 23
+(There was 1 warning)
