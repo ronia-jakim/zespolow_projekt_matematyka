@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.25)  12 NOV 2023 14:03
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.9.9)  6 NOV 2023 14:54
->>>>>>> fbb51673c34c4bb7061bcf9ce358e1cc1893cda7
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.8.25)  12 NOV 2023 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1176,68 +1172,56 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 (Font)              scaled to size 14.39996pt on input line 3.
 
-<<<<<<< HEAD
-Overfull \hbox (2.12534pt too wide) in paragraph at lines 5--6
+Overfull \hbox (2.12534pt too wide) in paragraph at lines 5--8
 \T1/SourceSansPro-TLF/regular/n/12 (-20) Czasoprzestrze« w ogól-nej teorii wzgl¦d-no±ci jest $4$ wymi-arow¡ roz-maito±-ci¡, której trzy wspóªrz¦dne
+ []
+
+
+Overfull \hbox (7.78407pt too wide) in paragraph at lines 13--14
+[]\T1/SourceSansPro-TLF/regular/n/12 (-20) Bardzo ciekaw¡ wªas-no±-ci¡ przestrzeni sty-cznych jest ich lin-iowo±¢, to jest obiekt $[][][]$ jest przestrzeni¡
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 7.
-Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 7.
-LaTeX Font Info:    Trying to load font information for U+mvs on input line 10.
+(mdframed)              on input line 26.
+Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 26.
+LaTeX Font Info:    Trying to load font information for U+mvs on input line 29.
 (/usr/share/texmf-dist/tex/latex/marvosym/umvs.fd) (/usr/share/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 37.
+
+[3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 28.
- [3] [4]) [5] (./main.bbl
+(mdframed)              on input line 47.
+ [4]) [5] (./czasteczka.tex) [6] (./main.bbl
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
 (Font)              `T1/SourceSansPro-TLF/regular/it' on input line 10.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
 (Font)              scaled to size 12.0pt on input line 10.
-) [6] (./main.aux)
-=======
-Overfull \hbox (7.78407pt too wide) in paragraph at lines 11--12
-[]\T1/SourceSansPro-TLF/regular/n/12 (-20) Bardzo ciekaw¡ wªas-no±-ci¡ przestrzeni sty-cznych jest ich lin-iowo±¢, to jest obiekt $[][][]$ jest przestrzeni¡
- []
-
-[3]) [4] (./main.aux)
->>>>>>> fbb51673c34c4bb7061bcf9ce358e1cc1893cda7
+) [7] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D1D64C939EE44B83F68801B24A45D620;564.
+(rerunfilecheck)             Checksum: 75C08A6E84A304EFCE9AAC6AE5933092;976.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 32449 strings out of 476025
- 633556 string characters out of 5796532
+ 32485 strings out of 476025
+ 634516 string characters out of 5796532
  1870388 words of memory out of 5000000
- 52127 multiletter control sequences out of 15000+600000
- 649427 words of font info for 176 fonts, out of 8000000 for 9000
+ 52133 multiletter control sequences out of 15000+600000
+ 651923 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,10n,118p,1001b,1065s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,10n,118p,1001b,1098s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (6 pages, 231673 bytes).
+Output written on main.pdf (7 pages, 237040 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 51237 words of extra memory for PDF output out of 51595 (max. 10000000)
-=======
- 32242 strings out of 476025
- 628250 string characters out of 5796533
- 1866388 words of memory out of 5000000
- 51957 multiletter control sequences out of 15000+600000
- 638785 words of font info for 163 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 117i,6n,118p,1001b,492s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (4 pages, 181638 bytes).
-PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 47141 words of extra memory for PDF output out of 51595 (max. 10000000)
->>>>>>> fbb51673c34c4bb7061bcf9ce358e1cc1893cda7
+ 128 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 51253 words of extra memory for PDF output out of 51595 (max. 10000000)
 

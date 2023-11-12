@@ -1476,6 +1476,10 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-Regular-t
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1--base.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1--base.tfm
+INPUT ./czasteczka.tex
+INPUT czasteczka.tex
+INPUT ./czasteczka.tex
+INPUT czasteczka.tex
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT ./main.bbl

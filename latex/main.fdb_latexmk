@@ -1,17 +1,13 @@
 # Fdb version 4
-<<<<<<< HEAD
-["bibtex main"] 1699793343 "main.aux" "main.bbl" "main" 1699794231 0
-  "./literatura.bib" 1699790312 573 6bd59de15582c313ccc6c4b3860e567d ""
+["bibtex main"] 1699805274 "main.aux" "main.bbl" "main" 1699806971 0
+  "./literatura.bib" 1699802602 573 6bd59de15582c313ccc6c4b3860e567d ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1689853683 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1699794231 1691 5e358d1147db5ac98a87117688bba3d8 "pdflatex"
+  "main.aux" 1699806970 2000 e6f76218c79d93ace3b0336ac3443c53 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1699794230 "main.tex" "main.pdf" "main" 1699794231 0
-=======
-["pdflatex"] 1699278879 "main.tex" "main.pdf" "main" 1699278880 0
->>>>>>> fbb51673c34c4bb7061bcf9ce358e1cc1893cda7
+["pdflatex"] 1699806969 "main.tex" "main.pdf" "main" 1699806971 0
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1689853683 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm" 1689853683 1648 77a748afe0a406be1ac3f29e1cd365cb ""
@@ -243,26 +239,16 @@
   "/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty" 1689853683 2245 c8a4088d07cffc2e5207730c738edd76 ""
   "/usr/share/texmf-dist/tex/latex/zref/zref-base.sty" 1689853683 20785 71a3d72ab517959a6979c27e6176bec1 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
-<<<<<<< HEAD
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1692984530 4623317 a14e403ea671a9bc12f23e543c6a500e ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1692984505 8204232 43b33a02560f687eef0a490aba0fedce ""
-  "main.aux" 1699794231 1691 5e358d1147db5ac98a87117688bba3d8 "pdflatex"
-  "main.bbl" 1699793343 302 c1f816bbfe25b6cd18135ef289e0a04a "bibtex main"
-  "main.out" 1699794231 564 d1d64c939ee44b83f68801b24a45d620 "pdflatex"
-  "main.tex" 1699789230 465 750a126db04d985bab8413b8b0898630 ""
-  "main.toc" 1699794231 267 646825e791142a34e3bb3a7b2eadadaf "pdflatex"
-  "template.sty" 1699258072 7406 e37fcf854246f7fa67661481323bf7ff ""
-  "wstepy.tex" 1699794230 7469 b9e1546656b31e14228dcb64b3017888 ""
-=======
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1694260517 4623317 a14e403ea671a9bc12f23e543c6a500e ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1694260449 8204214 970c5842e707b5e5d3ac77ac394d7e44 ""
-  "main.aux" 1699278880 979 0835f70ce1caf1d29cdfa1e92de19637 "pdflatex"
-  "main.out" 1699278880 564 d1d64c939ee44b83f68801b24a45d620 "pdflatex"
-  "main.tex" 1699190242 411 a7342b77059bdae135b49bef8d7c530f ""
-  "main.toc" 1699278880 267 646825e791142a34e3bb3a7b2eadadaf "pdflatex"
-  "template.sty" 1699189977 7406 e37fcf854246f7fa67661481323bf7ff ""
-  "wstepy.tex" 1699278879 4437 aaabb4bde53e2249a27f1c6704aaadab ""
->>>>>>> fbb51673c34c4bb7061bcf9ce358e1cc1893cda7
+  "czasteczka.tex" 1699806968 1734 873175edd7331652ec3f7ddeaec1182e ""
+  "main.aux" 1699806970 2000 e6f76218c79d93ace3b0336ac3443c53 "pdflatex"
+  "main.bbl" 1699805274 302 c1f816bbfe25b6cd18135ef289e0a04a "bibtex main"
+  "main.out" 1699806970 976 75c08a6e84a304efce9aac6ae5933092 "pdflatex"
+  "main.tex" 1699805085 497 75898ed465f3ed6ef7c1f6d199ec7701 ""
+  "main.toc" 1699806970 451 faa0e15e001082578ddda371a6279f83 "pdflatex"
+  "template.sty" 1699802602 7406 e37fcf854246f7fa67661481323bf7ff ""
+  "wstepy.tex" 1699805061 9200 0ce1241d92facb7bc023aa2ee1360762 ""
   (generated)
   "main.aux"
   "main.log"

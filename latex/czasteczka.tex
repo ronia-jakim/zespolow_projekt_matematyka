@@ -1,0 +1,18 @@
+\section{Coś}
+
+\subsection{Wzory na cząsteczkę poruszającą się po płaszczyźnie}
+
+Wyobraźmy sobie, że obserwujemy cząsteczkę przemieszczającą się po płaszczyźnie przechodzącej przez środek czarnej dziury. Jeśli prędkość początkowa tej cząsteczki nie posiada składnika normalnego do tej płaszczyzny, to od razu możemy założyć, że współrzędna $\theta$ ma stale wartość $\frac{\pi}{2}$ oraz $d\theta=0$. Co więcej, będąc obserwatorem ze stoperem stojącym nieskończenie daleko od czarnej dziury, możemy założyć, że $dt=1$, tzn. co sekundę patrzymy gdzie nasza cząsteczka się znajduje i zapisujemy to. W tym konkretnym przypadku metryka Schwarzschilda wygląda
+$$g=-A(r)\cdot c^2+ A(r)^{-1}\left(\frac{dr}{dt}\right)^2+r^2\left(\frac{d\phi}{dt}\right)^2,$$
+gdzie $A(r)=1-\frac{r_s}{r}$ zostało wprowadzone dla przejrzystości pisanego kodu.
+
+Zauważmy, że $\frac{dr}{dt}$ to prędkość przybliżania się do środka układu współrzędnych, a $\frac{d\phi}{dt}$ to prędkość z jaką zmienia się współrzędna kątowa. 
+
+Rozważmy więc cząsteczkę o współrzędnej $(r_0, \phi_0)$ poruszającą się z prędkościami
+$$\frac{dr}{dt}=a$$
+$$\frac{d\phi}{dt}=b$$
+wtedy komponent prędkości równoległy do współrzędnej $x$ wynosi
+$$\frac{dx}{dt}=(r_0+a)\cos(\phi_0+b)-r_0\cos\phi_0$$
+natomiast komponent równoległy do współrzędnej $y$ ma wartość
+$$\frac{dy}{dt}=(r_0+a)\sin(\phi_0+b)-r_0\sin\phi_0.$$
+To wyliczenie, połączone z umiejętnością zamiany między współrzędnymi polarnymi a kartezjańskimi powinno umożliwić nam napisanie prostego programu który wylicza pierwsze $n$ kroków cząsteczki poruszającej się w polu grawitacyjnym badanej czarnej dziury.

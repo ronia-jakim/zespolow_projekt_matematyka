@@ -4,54 +4,56 @@ import matplotlib.pyplot as plt
 G = 6.6743015*(10**(-10)) # stała grawitacyjna
 C = 299792458             # prędkość światła
 
+def A (pos, rs):
+    return 1 - (rs / pos)
+
 # co się dzieje z polem grawitacyjnym g, kiedy chodzimy po kole wokół czarnej dziury
 # to znaczy, że czas jest stały, promień i phi się zmienia, theta jest stale równa pi
-def g_na_annulusie (mass, x0, y0, vx, vy):
+def g_na_annulusie (mass, r0, phi0, vr, vphi, n):
     
     # promień Schwarzschilda
-    rs = (2 * G * mass) / (C**2) 
+    rs = 1#(2 * G * mass) / (C**2) 
     print(rs)
 
-    # theta = pi
-    # dtheta = 0
-    # dt = 1
-
-    dt = 1
-    theta = np.pi
-
-    x = x0
-    y = y0
-
-    dx = vx
-    dy = vy
-
-    xlst = [] 
+    xlst = []
     ylst = []
 
+    r = rs + r0 
+    phi = phi0
+
+    x = r * np.cos(phi)
+    xlst.append(x)
+
+    y = r * np.sin(phi)
+    ylst.append(y)
+
     i = 0
-    while i < 10: 
-        i = i + 1
-        
-        Rxy = np.sqrt(x**2 + y**2)
+    
+    print(A(r, rs))
 
-        a = 1 - (rs / Rxy)
+    while i < n:
+        g = (-A(r, rs) ) + ( ( 1 / A(r, rs) ) * vr * vr ) + r * r * vphi * vphi 
 
-        g = ( -1 * a * C**2 * dt**2 ) + ((1 / a) * ( (x*dx)/Rxy + (y*dy)/Rxy)**2 ) + ( Rxy**2 * ( (x*dy) / (x**2 + y**2) - (y*dx) / (x**2 + y**2) ) )
+        dx = (r + vr) * np.cos(phi + vphi) - r * np.cos(phi)
+        dy = (r + vr) * np.sin(phi + vphi) - r * np.sin(phi)
 
-        dx = (1 + g) * dx
-        dy = (1 + g) * dy 
-
-        x = x + dx 
-        y = y + dy 
-
+        x = r * np.cos(phi) - (dx * g) 
         xlst.append(x)
+
+        y = r * np.sin(phi) - (dy * g)
         ylst.append(y)
+
+        r = np.sqrt(x*x + y*y)
+        phi = np.arctan(y / x)
+
+        i += 1
 
     print(xlst)
     print(ylst)
-    plt.plot(xdata = xlst, ydata = ylst)
+    
+    plt.plot(xlst, ylst)
     plt.show()
 
 
-g_na_annulusie(10*(30), 20, 20, 15, 15)
+g_na_annulusie(10*(30), 2, 20, 5, 5, 30)
     

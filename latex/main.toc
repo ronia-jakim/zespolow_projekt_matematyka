@@ -1,3 +1,5 @@
 \contentsline {section}{\numberline {1}Wstęp}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Rozmaitość Riemannowska i tensor metryczny}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Czarne dziury Schwarzschild'a}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Czarne dziury Schwarzschild'a}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Coś}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Wzory na cząsteczkę poruszającą się po płaszczyźnie}{6}{subsection.2.1}%
