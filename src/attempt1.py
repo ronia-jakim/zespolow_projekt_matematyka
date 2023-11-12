@@ -37,10 +37,10 @@ def g_na_annulusie (mass, r0, phi0, vr, vphi, n):
         dx = (r + vr) * np.cos(phi + vphi) - r * np.cos(phi)
         dy = (r + vr) * np.sin(phi + vphi) - r * np.sin(phi)
 
-        x = r * np.cos(phi) - (dx * g) 
+        x = r * np.cos(phi) + dx - (g * x)
         xlst.append(x)
 
-        y = r * np.sin(phi) - (dy * g)
+        y = r * np.sin(phi) + dy - (g * y)
         ylst.append(y)
 
         r = np.sqrt(x*x + y*y)
