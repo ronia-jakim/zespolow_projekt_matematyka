@@ -19,13 +19,15 @@
 )
 
 #set heading(
-  numbering: "1."
+  numbering: "1.1."
 )
  
 #show heading: it => {
   it.body
   v(1em)
 }
+
+#import "@preview/cetz:0.1.2"
 
 #align(center, text(17pt)[
   *#title*
