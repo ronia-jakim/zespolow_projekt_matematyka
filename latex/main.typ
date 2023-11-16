@@ -19,7 +19,7 @@
 )
 
 #set heading(
-  numbering: "1.1."
+  numbering: "1.1.1."
 )
  
 #show heading: it => {
