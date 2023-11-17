@@ -29,6 +29,11 @@
 
 #import "@preview/cetz:0.1.2"
 
+#import "@preview/ctheorems:1.1.0": *
+#show: thmrules
+
+#let definition = thmbox("definition", "Definicja", fill: rgb("#eeffee"))
+
 #align(center, text(17pt)[
   *#title*
 ])
@@ -44,7 +49,7 @@
 )
 
 #pagebreak()
-
+ 
 #outline()
 
 #pagebreak(

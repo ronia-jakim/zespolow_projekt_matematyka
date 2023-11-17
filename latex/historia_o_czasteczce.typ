@@ -40,3 +40,9 @@ $ g_(mu, nu) = mat(
 lub równoważnie wzorem $"ds"^2 = d theta^2 + sin^2(theta) d phi^2$, który wynika z wyliczenia długości wektora powstałego przez zmianę kąta $phi$ o $d phi$ oraz kąta $theta$ o $d theta$.
 
 Wiemy już, że pomimo braku przyśpieszenia na zakrzywionej czasoprzestrzeni wokół dziury foton będzie sprawiał wrażenie skręcającego. Chcielibyśmy teraz umieć zrekonstruować jak obserwator w $bb(R)^3$ widzi trasę fotonu w otoczeniu $"BH"$ mając tylko początkowe położenie i prędkość cząsteczki. 
+
+== Przygotowania
+
+Po pierwsze zauważmy, że nie interesuje nas tak naprawdę samo $gamma$, gdyż ono opisuje tylko położenie w zależności od czasu. W naszym przypadku o wiele bardziej przydatna będzie znajomość wektora prędkości, czyli $frac(d gamma, d t)$, który tak naprawdę jest szczególnym przykładem pola wektorowego wzdłuż krzywej, czyli przyporządkowania 
+$ V:I arrow T"BH" $ 
+takiego, że dla dowolnego $t in I$ zachodzi $V(t) in T_(gamma(t))"BH"$. 
