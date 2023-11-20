@@ -55,5 +55,17 @@
 #pagebreak(
   weak: true
 )
+ 
+= Wstęp
+
+#include "czarne_dziury.typ"
 
 #include "historia_o_czasteczce.typ"
+
+#include"christoffel.typ"
+
+#bibliography(
+  "literatura.bib",
+  title: "Bibliografia", 
+  full: true
+)

@@ -1,9 +1,3 @@
-= Wstęp
-
-== O rozmaitościach różniczkowalnych
-
-== Czarne dziury Schwarzschielda
-
 == Historia o pewnym fotonie
 
 Foton poruszający się w przestrzeni kosmicznej nie jest pod wpływem zewnętrznych sił. Jest cząsteczką, na której prędkość nie wpływają zewnętrzne (ani wewnętrzne) siły, więc jego przyśpieszenie przez całą podróż przez czasoprzestrzeń wokół badanej czarnej dziury pozostaje równe $0$. 
@@ -32,7 +26,7 @@ Niestety, metryka zadana na $"BH"$ mówi nam, że przestrzeń wokół czarnej dz
   })
 ]
 
-To zjawisko jest też wyrażone w tym jak różny jest produkt skalarny, czy raczej tensorowy, na badanej przez nas przestrzeni. Nie jest trudno zauważyć, że tensor metryczny na jednostkowej sferze $S^2$ przedstawia się macierzą
+To zjawisko jest też wyrażone w tym jak różny jest produkt skalarny, czy raczej tensorowy, na badanej przez nas przestrzeni od produktu skalarnego w przestrzeni euklidesowej. Nie jest trudno zauważyć, że tensor metryczny na jednostkowej sferze $S^2$ przedstawia się macierzą
 $ g_(mu, nu) = mat(
   1, 0;
   0, sin^2(theta);
@@ -41,8 +35,3 @@ lub równoważnie wzorem $"ds"^2 = d theta^2 + sin^2(theta) d phi^2$, który wyn
 
 Wiemy już, że pomimo braku przyśpieszenia na zakrzywionej czasoprzestrzeni wokół dziury foton będzie sprawiał wrażenie skręcającego. Chcielibyśmy teraz umieć zrekonstruować jak obserwator w $bb(R)^3$ widzi trasę fotonu w otoczeniu $"BH"$ mając tylko początkowe położenie i prędkość cząsteczki. 
 
-== Przygotowania
-
-Po pierwsze zauważmy, że nie interesuje nas tak naprawdę samo $gamma$, gdyż ono opisuje tylko położenie w zależności od czasu. W naszym przypadku o wiele bardziej przydatna będzie znajomość wektora prędkości, czyli $frac(d gamma, d t)$, który tak naprawdę jest szczególnym przykładem pola wektorowego wzdłuż krzywej, czyli przyporządkowania 
-$ V:I arrow T"BH" $ 
-takiego, że dla dowolnego $t in I$ zachodzi $V(t) in T_(gamma(t))"BH"$. 
