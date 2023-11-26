@@ -1,5 +1,7 @@
 from scipy.constants import c, pi
 import numpy as np
+import matplotlib.animation as anim 
+import matplotlib.pyplot as plt
 
 class photon():
     def __init__(self, x, y) -> None:
@@ -23,4 +25,14 @@ class photon():
             new_position = (old_position[0] + (distance * np.cos(self.angle)),
                             old_position[1] + (distance * np.sin(self.angle)))
             self.position = new_position
+
+    # def show_photon(self, dt, T) -> None:
+    #     fig, ax = plt.subplots()
+    #     t = np.arange(0, T, dt)
+    #     line = ax.plot(self.position[0],
+    #                    self.position[1])
+
+    #     ani = anim.FuncAnimation(fig=fig, func=self.move(dt), frames=40,
+    #                              interval = 30)
+    #     plt.show()
 
