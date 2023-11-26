@@ -10,15 +10,13 @@ for t in np.arange(0, 5, dt):
 
 fig, ax = plt.subplots()
 
-line2 = ax.scatter(p.position[0], p.position[1])
+line2 = ax.plot(p.pathx[0], p.pathy[0])[0]
 
 def animation(j):
-  x = p.pathx[j]
-  y = p.pathy[j]
-  data = np.stack([x, y]).T
-  line2.set_offsets(data)
+  line2.set_xdata(p.pathx[:j])
+  line2.set_ydata(p.pathy[:j])
   
-  return line2
+  return line2,
 
 
 animate = anim.FuncAnimation(fig=fig,
