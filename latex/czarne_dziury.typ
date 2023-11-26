@@ -1,5 +1,3 @@
-== O rozmaitościach różniczkowalnych
-
 == Czarne dziury Schwarzschielda
 
 Czarne dziury fascynują i przerażają. Są to obiekty rodem z science fiction - punkt o zerowej objętości i nieskończonej gęstości otoczony tajemniczym horyzontem zdarzeń. Nic dziwnego, że sam Einstein, jak i wielu naukowców, nie mogli uwierzyć w ich istnienie.

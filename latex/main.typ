@@ -60,6 +60,8 @@
 
 #include "czarne_dziury.typ"
 
+#include "rozmaitosci.typ"
+
 #include "historia_o_czasteczce.typ"
 
 #include"christoffel.typ"
