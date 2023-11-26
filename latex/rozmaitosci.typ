@@ -8,7 +8,7 @@ Rozmaitości różniczkowalne pozwalają na badanie różnych obiektów matematy
   [mapy przejścia $phi_alpha phi_beta^(-1)$ i $phi_beta phi_alpha^(-1)$ są gładkimi odwzorowaniami pomiędzy podzbiorami $bb(R)^n$.]
 )
 
-Dla dowolnego punktu $p in M$ mówimy, że $T_p M$ jest *przestrzenią styczną* w punkcie $p$, czyli przestrzenią zawierającą wektory styczne w tym punkcie. $"TM"$ to z kolei rozłączna suma po wszystkich przestrzeniach stycznych, którą nazywamy *wiązką styczną*. Bardzo ciekawą własnością przestrzeni stycznych jest ich liniowość, tzn. dla każdego $p in M$ przestrzeń $T_p M$ jest przestrzenią wektorową wymiaru $n$, a jeśli $(U, phi)$, $phi=(phi_1,...,phi_n)$ jest mapą wokół $p$, to zbiór
+Dla dowolnego punktu $p in M$ mówimy, że $T_p M$ jest *przestrzenią styczną* w punkcie $p$, czyli przestrzenią zawierającą wektory styczne w tym punkcie. $"TM"$ to z kolei rozłączna suma po wszystkich przestrzeniach stycznych, którą nazywamy *wiązką styczną*. Bardzo ciekawą własnością przestrzeni stycznych jest ich liniowość @leeSmoothManifolds, tzn. dla każdego $p in M$ przestrzeń $T_p M$ jest przestrzenią wektorową wymiaru $n$, a jeśli $(U, phi)$, $phi=(phi_1,...,phi_n)$ jest mapą wokół $p$, to zbiór
 $ {frac(diff, diff phi_1),...,frac(diff, diff phi_n)} $
 jest bazą $T_p M$.
 
@@ -32,4 +32,4 @@ $ g_(mu, nu) = mat(
   0, 0, r^2, 0; 
   0, 0, 0, r^2 sin^2(theta)
   ), $
-gdzie $r_s$ to promień Schwarzschilda, a $c$ oznacza prędkość światła.
+gdzie $r_s$ to promień Schwarzschilda, a $c$ oznacza prędkość światła @notatkiUoCSD.
