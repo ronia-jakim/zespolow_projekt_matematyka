@@ -1,4 +1,4 @@
-from scipy.constants import c, pi
+#from scipy.constants import c, pi
 import numpy as np
 import matplotlib.animation as anim 
 import matplotlib.pyplot as plt
@@ -9,7 +9,7 @@ class photon():
         self.velocity = (1, 0)
         self.pathx = []
         self.pathy = []
-        self.angle = pi / 6
+        self.angle = np.pi / 6
         self.dead = False
 
     def kill(self) -> None:
