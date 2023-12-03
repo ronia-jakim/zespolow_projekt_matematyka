@@ -13,10 +13,9 @@ fig, ax = plt.subplots()
 line2 = ax.plot(p.pathx[0], p.pathy[0])[0]
 
 def animation(j):
-  line2.set_xdata(p.pathx[:j])
-  line2.set_ydata(p.pathy[:j])
-  
-  return line2,
+    line2.set_xdata(p.pathx[:j])
+    line2.set_ydata(p.pathy[:j])
+    return line2
 
 
 animate = anim.FuncAnimation(fig=fig,
