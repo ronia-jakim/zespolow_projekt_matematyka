@@ -37,5 +37,6 @@ def update(frame):
 a = [1, 2, 3, 4]
 a[2:] = [0, 0]
 print(np.sin((np.pi)/2))
+print(1e3)
 
 

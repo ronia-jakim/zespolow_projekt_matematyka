@@ -3,7 +3,12 @@ import numpy as np
 import matplotlib.animation as anim 
 import matplotlib.pyplot as plt
 
-G, M, c = 10**-2, 1, 1
+# # Constants
+# G = 6.67430e-11  # gravitational constant in m^3 kg^-1 s^-2
+# c = 299792458.0  # speed of light in m/s
+# M = 1.989e30     # mass of the black hole in kg (for example, solar mass)
+
+G, c, M = 0.01, 1, 10
 
 def runge_kutta_4(f, g, x0, y0, T, h):
     T_d = np.arange(0, T, h)
@@ -37,37 +42,39 @@ def runge_kutta_4(f, g, x0, y0, T, h):
     return X[:-1], Y[:-1]
 
 class photon():
-    def __init__(self, theta, r) -> None:
-        self.position = (r * np.cos(theta), r * np.sin(theta))
-        self.velocity = (1, 0)
+    def __init__(self, x, y) -> None:
+        self.position = (x, y)
         self.pathx = []
         self.pathy = []
-        self.angle = theta
-        self.radius = r
         self.dead = False
+        self.theta = np.arctan(y/x)
+        self.radius = np.sqrt(x**2 + y ** 2)
 
     def kill(self) -> None:
         self.dead = True
 
     def move(self, T, step) -> None:
-        # v = ds/dt
-        r_schwarz = (2 * G * M) / c
+        r_schwarz = (2 * G * M) / (c**2)
         r_equation = lambda t, theta, r: (t / r) * (1 - ((2 * G * M )/r))
         theta_equation = lambda t, theta, r: -((theta * r_equation(t, theta, r)) / 2 * r)
         rs, thetas = runge_kutta_4(r_equation, 
                                    theta_equation, 
-                                   self.position[0], 
-                                   self.position[1], 
+                                   self.radius, 
+                                   self.theta, 
                                    T, step)
-        
+
+        print(rs)
+
         for i in range(len(rs)):
-            if rs[i] < r_schwarz:
-                rs[i:] == np.zeros(len(rs) - i)
+            if np.abs(rs[i]) < r_schwarz:
+                rs[i:] = np.zeros((len(rs) - i))
                 break
 
-        
-        self.pathx = rs * np.cos(thetas)
-        self.pathy = rs * np.sin(thetas)
+        # print(rs)
+
+        self.pathx = np.abs(rs) * np.cos(thetas)
+        self.pathy = np.abs(rs) * np.sin(thetas)
+
         self.position = self.pathx[-1], self.pathy[-1]
 
         
