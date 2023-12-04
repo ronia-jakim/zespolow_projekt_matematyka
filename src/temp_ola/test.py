@@ -35,6 +35,7 @@ def update(frame):
 # plt.show()
 
 a = [1, 2, 3, 4]
-print(np.cos(np.pi/4))
+a[2:] = [0, 0]
+print(np.sin((np.pi)/2))
 
 
