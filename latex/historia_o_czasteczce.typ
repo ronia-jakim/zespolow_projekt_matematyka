@@ -6,7 +6,7 @@ Oznaczmy przez $"BH"$ rozmaitość opisującą czasoprzestrzeń wokół rozważa
 $ "BH" = bb(R) times (0,+oo) times S^2 $
 Wówczas podróż fotonu jest opisywana przez krzywą
 $ gamma:I arrow "BH" $
-gdzie $I$ jest pewnym odcinkiem. Wiemy, że $frac(d^2 gamma, d t^2)=0$, czyli wydaje się, iż dostajemy proste równania różniczkowe opisujące zachowanie funkcji czterowymiarowej.
+gdzie $I$ jest pewnym odcinkiem. Ponieważ foton porusza się z prędkością światla i nie przyśpiesza, to wiemy, że $frac(d^2 gamma, d t^2)=0$. Wydaje się, iż dostajemy proste równania różniczkowe opisujące zachowanie funkcji czterowymiarowej.
 
 Niestety, metryka zadana na $"BH"$ mówi nam, że przestrzeń wokół czarnej dziury nie jest do końca taka jak przestrzeń $bb(R)^4$. Jest ona nieco zakrzywiona i to właśnie to zakrzywienie czasoprzestrzeni będzie wpływać na obserwowane przez nas zakrzywienie trasy fotona. Aby zrozumieć to lepiej, wyobraźmy sobie, że foton porusza się wzdłuż równika na sferze $S^2$. Wówczas pomimo, że foton nie przyśpiesza w rozumieniu jego podróży po bardzo zagiętej przestrzeni, to dla obserwatora z zewnętrz jego prędkość cały czas się zmienia:
 
