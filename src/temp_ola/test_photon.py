@@ -3,15 +3,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as anim
 
-p = photon(np.pi / 4, 1)
+p = photon(2 * np.pi / 5, 3)
 
 fig, ax = plt.subplots()
+print(p.position)
 scat = ax.scatter(p.position[0], p.position[1])
-ax.set(xlim=[-1, 1], ylim=[-1, 1])
+ax.set(xlim=[-3, 3], ylim=[-3, 3])
 
 Time = 10
-dt = 0.01
+dt = 0.1
 p.move(Time, dt)
+
+print(p.pathx)
 
 def animation(j):
     x = p.pathx[:j]
@@ -24,7 +27,7 @@ def animation(j):
 animate = anim.FuncAnimation(fig=fig,
                             func = animation,
                             frames = len(np.arange(0, Time, dt)),
-                            interval = 20
+                            interval = 40
                             )
 
 # plt.scatter(p.pathx, p.pathy)

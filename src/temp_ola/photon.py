@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.animation as anim 
 import matplotlib.pyplot as plt
 
-G, M = 10**-8, 1
+G, M, c = 10**-2, 1, 1
 
 def runge_kutta_4(f, g, x0, y0, T, h):
     T_d = np.arange(0, T, h)
@@ -51,17 +51,25 @@ class photon():
 
     def move(self, T, step) -> None:
         # v = ds/dt
-        if not self.dead:
-            r_equation = lambda t, theta, r: (t / r) * (1 - ((2 * G * M )/r))
-            theta_equation = lambda t, theta, r: -((theta * r_equation(t, theta, r)) / 2 * r)
-            rs, thetas = runge_kutta_4(r_equation, 
-                                                   theta_equation, 
-                                                   self.position[0], 
-                                                   self.position[1], 
-                                                   T, step)
-            
-            self.pathx = rs * np.cos(thetas)
-            self.pathy = rs * np.sin(thetas)
-            self.position = self.pathx[-1], self.pathy[-1]
+        r_schwarz = (2 * G * M) / c
+        r_equation = lambda t, theta, r: (t / r) * (1 - ((2 * G * M )/r))
+        theta_equation = lambda t, theta, r: -((theta * r_equation(t, theta, r)) / 2 * r)
+        rs, thetas = runge_kutta_4(r_equation, 
+                                   theta_equation, 
+                                   self.position[0], 
+                                   self.position[1], 
+                                   T, step)
+        
+        for i in range(len(rs)):
+            if rs[i] < r_schwarz:
+                rs[i:] == np.zeros(len(rs) - i)
+                break
+
+        
+        self.pathx = rs * np.cos(thetas)
+        self.pathy = rs * np.sin(thetas)
+        self.position = self.pathx[-1], self.pathy[-1]
+
+        
             
 
