@@ -39,10 +39,11 @@ xdata2,ydata2= [], []
 photons = [] 
 ll = []
 
+
 for i in range(0, PHOTON_NR):
     photons.append(photon(PHOTON_X, offset + PHOTON_SEP * i))
     
-    ln, = plt.plot([], [], 'ro')
+    ln, = plt.plot([], [])
     ll.append(ln)
 
 Time = 4
