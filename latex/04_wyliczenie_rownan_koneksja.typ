@@ -1,4 +1,4 @@
-== Przygotowania
+== Równanie geodezyjnej w pobliżu czarnej dziury Schwarzschilda
 
 /*
 Po pierwsze zauważmy, że nie interesuje nas tak naprawdę samo $gamma$, gdyż ono opisuje tylko położenie w zależności od czasu. W naszym przypadku o wiele bardziej przydatna będzie znajomość wektora prędkości, czyli $frac(d gamma, d t)$, który tak naprawdę jest szczególnym przykładem pola wektorowego wzdłuż krzywej, czyli przyporządkowania 
@@ -59,7 +59,7 @@ Zauważmy, że patrząc na podróż fotona, przesuwamy wraz z nim przestrzeń st
 
 Idąc przez północny biegun sfery wektory styczne obracają się i na końcu trasy nie zgadzają się z wektorami, które były przesuwane po równiku. O Operacji przesuwania wektorów stycznych wzdłuż krzywej można myśleć jako o składaniu pól wektorowych - przesuwane wektory są jednym polem, a wektor prędkości na krzywej jest drguim polem. W celu uzgodnienia tego, jak przesuwać przestrzeń styczną wzdłuż krzywej, lub bardziej ogólnie jak składać pola wektorowe, potrzebne jest użycie koneksji Levi-Civity.
 
-Koneksja Levi-Civity jest połączeniem affinicznym, który składowe pola wektorowego przenosi na przestrzeń stycznyną nieskończnenie odległą od rozmaitości. Można o tym myśleć jako o rzutowaniu wektorów stycznych w różnych punktach na daleką kartkę papieru. Dzięki temu możemy porównywać pola wektorowe w dowolnych punktach na rozmaitości. Formalna definicja koneksji Levi-Civity mówi, że jest to połączenie affiniczne $nabla$ które 
+*Koneksja Levi-Civity* jest połączeniem affinicznym, który składowe pola wektorowego przenosi na przestrzeń stycznyną nieskończnenie odległą od rozmaitości. Można o tym myśleć jako o rzutowaniu wektorów stycznych w różnych punktach na daleką kartkę papieru. Dzięki temu możemy porównywać pola wektorowe w dowolnych punktach na rozmaitości. Formalna definicja koneksji Levi-Civity mówi, że jest to połączenie affiniczne $nabla$ które 
 - zachowuje metrykę, tzn. $nabla g=0$ 
 - oraz jest pozbawione torsji, tzn. dla dowolnych pól wektorowych $X, Y$ mamy $nabla_X Y-nabla_Y X=[X, Y]$, gdzie $[X, Y]$ jest pochodną Liego $X, Y$.
 

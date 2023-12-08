@@ -58,13 +58,19 @@
  
 = Wstęp
 
-#include "czarne_dziury.typ"
+#include "01_czarne_dziury.typ"
 
-#include "rozmaitosci.typ"
+#include "02_rozmaitosci_definicja.typ"
 
-#include "historia_o_czasteczce.typ"
+= Matematyczna podróż do czarnej dziury
 
-#include"christoffel.typ"
+#include "03_zakrzywiona_przestrzen.typ"
+
+#include"04_wyliczenie_rownan_koneksja.typ"
+
+= Wyniki symulacji
+
+#include"05_jakie_algorytmy.typ" 
 
 #bibliography(
   "literatura.bib",

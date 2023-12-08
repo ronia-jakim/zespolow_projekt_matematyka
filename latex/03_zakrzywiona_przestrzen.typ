@@ -1,4 +1,4 @@
-== Historia o pewnym fotonie
+== Proste ścieżki na zakrzywionych powierzchniach - motywacja
 
 Foton poruszający się w przestrzeni kosmicznej nie jest pod wpływem zewnętrznych sił. Jest cząsteczką, na której prędkość nie wpływają zewnętrzne (ani wewnętrzne) siły, więc jego przyśpieszenie przez całą podróż przez czasoprzestrzeń wokół badanej czarnej dziury pozostaje równe $0$. 
 

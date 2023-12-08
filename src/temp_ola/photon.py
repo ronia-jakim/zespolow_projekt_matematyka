@@ -63,7 +63,7 @@ class photon():
                                    self.theta, 
                                    T, step)
 
-        print(rs)
+        # print(rs)
 
         for i in range(len(rs)):
             if np.abs(rs[i]) < r_schwarz:

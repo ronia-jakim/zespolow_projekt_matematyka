@@ -6,7 +6,7 @@ Czarne dziury powstają w wybuchu supernowej, kiedy gwieździe skończy się pal
 
 Czarne dziury były inspiracją dla wielu autorów gatunku science fiction - w filmie _Interstellar_ pojawia się Gargantu - obiekt o masie 100 milionów Słońc. Gdy podróżnicy docierają na planetę orbitującą wokół czarnej dziury mówią, iż czas płynie tu wolniej. Zjawisko możemy potwierdzić patrząc na wykres, pokazujący stosunek czasu płynącego normalnie, do czasu w zakrzywionej czasoprzestrzeni.
 #figure(
-  image("time_graph.jpg", width: 70%),
+  image("./ilustracje/Time_near_black_hole.png", width: 70%),
   caption: [Stosunek upływu czasu własnego do upływu czasu obserwowanego w punkcie nieskończenie odległym od czarnej dziury w zależności od położenia $r$.],
   supplement: [Wykres]
 ) <time_dilation>
@@ -14,7 +14,9 @@ Czarne dziury były inspiracją dla wielu autorów gatunku science fiction - w f
 W maju 2021 roku otrzymaliśmy pierwsze zdjęcie czarnej dziury - jest to supermasywny obiekt w centrum naszej galaktyki Saggitarius A.:
 
 #figure(
-  image("zakazany_donut.jpg", width: 70%),
+  image("./ilustracje/zakazany_donut.jpg", width: 70%),
   caption: [Zdjęcie czarnej dziury w centrum Mlecznej Drogii uzyskane przez @mleczna_droga.],
   supplement: [Figura]
 ) <time_dilation>
+
+Z matematycznego punktu widzenia, czarna dziura jest rozmaitością różniczkowalną z tensorem metrycznym, który opisuje jak zakrzywiona jest przestrzeń wokół niej. Aby więc dokładnie zrozumieć jak zachowują się cząstęczki w jej pobliżu, należy zrozumieć czym są rozmaitości i jak wygląda ich geometria.
