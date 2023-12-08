@@ -79,7 +79,7 @@ def do_animation() :
     ax.add_patch(circle)
 
     writer = anim.PillowWriter(fps=15, metadata=dict(artist='Me'), bitrate=1800)
-    #animate.save('./test_photon_animation.gif', writer=writer)
+    ani.save('./test_photon_animation.gif', writer=writer)
     plt.show()
 
 def do_static_graph() :
