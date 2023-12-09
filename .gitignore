@@ -72,3 +72,14 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 src/temp_ola/__pycache__/
+
+
+
+
+
+
+
+
+*
+
+!*.*
