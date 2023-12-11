@@ -56,6 +56,8 @@ def init():
     
     ax.set_xlim(-0.5*upper_lim, offset + PHOTON_X)
     ax.set_ylim(-offset, upper_lim)
+    # ax.set_xlim(-1, 7)
+    # ax.set_ylim(-1, 7)
     return ll #,ln2
 
 def update(frame):
