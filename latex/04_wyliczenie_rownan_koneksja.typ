@@ -69,10 +69,16 @@ $ nabla_j diff_k=Gamma_(j k)^l diff_l. $
 Niech więc $x_i$ będzie lokalnym układem współrzędnych na $"BH"$. Wtedy krzywa $gamma$ zadaje gładkie funkcje $t arrow.bar x_i (t)=x_i (gamma(t))$, które dają funkcję $bb(R) arrow bb(R)^4$. Równanie różniczkowe opisującę geodezyjną którą podróżuje foton przedstawia się wtedy jako
 $ nabla accent(gamma, dot) (t) = Gamma_(i,j)^k (x_1(t),...,x_4(t))frac(d x^i, d t) frac(d x^j, d t) = 0 $
 gdzie $Gamma_(i,j)^k$ to symbol Christoffela drugiego rodzaju wyznaczony za pomocą koneksji Levi-Cevity. W szczególności interesuje nas fakt, że $i$-ta współrzędna wektora prędkości fotonu wyraża się jako
-$ gamma ^i(t)= -Gamma_(m,j)^i frac(d x^m, d x) gamma ^j(t). $
+$ gamma ^i (t)= -Gamma_(m,j)^i frac(d x^m, d t) gamma ^j (t). $
 
 Symbole Christoffela użyte w obliczeniach zostały zaczerpnięte z @symboleGotowe.
 
 Ponieważ foton w naszym przypadku porusza się po płaszczyźnie przechodzącej przez równik, to $x^3 = theta = pi / 2$ jest funkcją stałą. Interesują nas więc tylko wartości zmiany $phi=x^4$ oraz $r=x^2$ w czasie, czyli
 $ phi' = -( 1 / r r' phi + 1 / r phi' r)=-( phi / r r' + phi') $
 $ r' = - ( frac(G M, r^2) (1 - (2G M) / r ) t - frac(G M, r^2) (1 - (2G M) / r)^(-1) r' r ) $
+
+$ phi' =  -Gamma_(r, phi)^phi r' phi - Gamma_(theta, phi)^phi theta' phi=- frac(r', r) phi - 0 $
+$ r' = -Gamma_(t, t)^r t' t - Gamma_(phi, phi)^r phi' phi -Gamma_(theta, theta)^r theta' theta - Gamma_(r, r)^r r' r = -e^(2 X - 2 V) frac(diff_r X, diff r) t + r e^(-2 V)phi' phi - frac(diff V, diff r) r' r $
+
+gdzie
+$ e^(2x)= e^(-2V)=(1- frac(2G M, c^2 r)) $

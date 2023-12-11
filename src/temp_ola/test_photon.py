@@ -27,7 +27,7 @@ def animation(j):
 r_schwarz = (2 * G * M) / c**2
 
 
-PHOTON_NR = 6
+PHOTON_NR = 20
 PHOTON_SEP = 1
 PHOTON_X = 1
 offset = 1
@@ -46,7 +46,7 @@ for i in range(0, PHOTON_NR):
     ln, = plt.plot([], [])
     ll.append(ln)
 
-Time = 4
+Time = 10
 dt   = 0.01
 for p in photons: 
     p.move(Time, dt)
@@ -79,7 +79,7 @@ def do_animation() :
     ax.add_patch(circle)
 
     writer = anim.PillowWriter(fps=15, metadata=dict(artist='Me'), bitrate=1800)
-    ani.save('./test_photon_animation.gif', writer=writer)
+    #ani.save('./test_photon_animation.gif', writer=writer)
     plt.show()
 
 def do_static_graph() :
