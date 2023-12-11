@@ -1,6 +1,6 @@
 == Proste ścieżki na zakrzywionych powierzchniach - motywacja
 
-Foton poruszający się w przestrzeni kosmicznej nie jest pod wpływem zewnętrznych sił. Jest cząsteczką, na której prędkość nie wpływają zewnętrzne (ani wewnętrzne) siły, więc jego przyśpieszenie przez całą podróż przez czasoprzestrzeń wokół badanej czarnej dziury pozostaje równe $0$. 
+Foton poruszający się w przestrzeni kosmicznej nie jest pod wpływem zewnętrznych sił. Jest cząsteczką, na której prędkość nie wpływają zewnętrzne (ani wewnętrzne) siły, więc jego przyspieszenie przez całą podróż przez czasoprzestrzeń wokół badanej czarnej dziury pozostaje równe $0$. 
 
 Oznaczmy przez $"BH"$ rozmaitość opisującą czasoprzestrzeń wokół rozważanej czarnej dziury Schwarzschilda, która zazwyczaj ma postać
 $ "BH" = bb(R) times (0,+oo) times S^2 $
