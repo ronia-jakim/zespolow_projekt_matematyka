@@ -1,4 +1,4 @@
-== Pojęcie rozmaitości Riemmanowskiej
+== Pojęcie rozmaitości Riemannowskiej
 
 Rozmaitości różniczkowalne pozwalają na badanie różnych obiektów matematycznych przez pryzmat przestrzeni $bb(R)^n$. Mówimy, że $M$ jest rozmaitością różniczkowalną z atlasem, czyli rodziną map, $cal(A)={ (U_alpha, phi_alpha) }$, jeśli
 - zbiory $U_alpha$ tworzą otwarte pokrycie $M$
