@@ -74,11 +74,15 @@ $ gamma ^i (t)= -Gamma_(m,j)^i frac(d x^m, d t) gamma ^j (t). $
 Symbole Christoffela użyte w obliczeniach zostały zaczerpnięte z @symboleGotowe.
 
 Ponieważ foton w naszym przypadku porusza się po płaszczyźnie przechodzącej przez równik, to $x^3 = theta = pi / 2$ jest funkcją stałą. Interesują nas więc tylko wartości zmiany $phi=x^4$ oraz $r=x^2$ w czasie, czyli
-$ phi' = -( 1 / r r' phi + 1 / r phi' r)=-( phi / r r' + phi') $
-$ r' = - ( frac(G M, r^2) (1 - (2G M) / r ) t - frac(G M, r^2) (1 - (2G M) / r)^(-1) r' r ) $
+/*$ phi' = -( 1 / r r' phi + 1 / r phi' r)=-( phi / r r' + phi') $
+$ r' = - ( frac(G M, r^2) (1 - (2G M) / r ) t - frac(G M, r^2) (1 - (2G M) / r)^(-1) r' r ) $ */
 
 $ phi' =  -Gamma_(r, phi)^phi r' phi - Gamma_(theta, phi)^phi theta' phi=- frac(r', r) phi - 0 $
 $ r' = -Gamma_(t, t)^r t' t - Gamma_(phi, phi)^r phi' phi -Gamma_(theta, theta)^r theta' theta - Gamma_(r, r)^r r' r = -e^(2 X - 2 V) frac(diff_r X, diff r) t + r e^(-2 V)phi' phi - frac(diff V, diff r) r' r $
 
 gdzie
 $ e^(2x)= e^(-2V)=(1- frac(2G M, c^2 r)) $
+
+Czyli równanie to 
+$ phi' = -frac(r', r) phi $
+$ r' =  $

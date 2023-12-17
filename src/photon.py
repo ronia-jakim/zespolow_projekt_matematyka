@@ -57,11 +57,19 @@ class photon():
         r_schwarz = (2 * G * M) / (c**2)
         r_equation = lambda t, theta, r: (t / r) * (1 - ((2 * G * M )/r))
         theta_equation = lambda t, theta, r: -((theta * r_equation(t, theta, r)) / 2 * r)
-        rs, thetas = runge_kutta_4(r_equation, 
+
+        B_r = lambda r : 1 - ((2 * G * M) / (c * c * r))
+        A_r = lambda r : (c * c * G * M) / (1 - 2 * c * c * G * M * r)
+        r_derivative = lambda t, phi, r : (B_r(r) * B_r(r) * A_r (r) * t) / (1 + B_r(r) * phi * phi + A_r(r) * r)
+        phi_derivative = lambda t, phi, r : - (r_derivative(t, phi, r)) / (r) * phi 
+
+        """rs, thetas = runge_kutta_4(r_equation, 
                                    theta_equation, 
                                    self.radius, 
                                    self.theta, 
                                    T, step)
+        """
+        rs, thetas = runge_kutta_4(r_derivative, phi_derivative, self.radius, self.theta, T, step)
 
         # print(rs)
 

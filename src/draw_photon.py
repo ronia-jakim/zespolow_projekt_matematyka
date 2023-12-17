@@ -46,7 +46,7 @@ for i in range(0, PHOTON_NR):
     ln, = plt.plot([], [])
     ll.append(ln)
 
-Time = 10
+Time = 20
 dt   = 0.01
 for p in photons: 
     p.move(Time, dt)
@@ -54,8 +54,11 @@ for p in photons:
 def init():
     upper_lim = (1.5 * offset) + PHOTON_SEP * PHOTON_NR
     
-    ax.set_xlim(-0.5*upper_lim, offset + PHOTON_X)
-    ax.set_ylim(-offset, upper_lim)
+    ax.set_xlim(-10, 10)
+    ax.set_ylim(-10, 10)
+
+    #ax.set_xlim(-0.5*upper_lim, offset + PHOTON_X)
+    #ax.set_ylim(-offset, upper_lim)
     # ax.set_xlim(-1, 7)
     # ax.set_ylim(-1, 7)
     return ll #,ln2
