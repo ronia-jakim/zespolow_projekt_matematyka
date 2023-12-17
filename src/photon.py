@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # c = 299792458.0  # speed of light in m/s
 # M = 1.989e30     # mass of the black hole in kg (for example, solar mass)
 
-G, c, M = 0.01, 1, 10
+G, c, M = 1, 1, 0.5
 
 def runge_kutta_4(f, g, x0, y0, T, h):
     T_d = np.arange(0, T, h)
@@ -42,27 +42,25 @@ def runge_kutta_4(f, g, x0, y0, T, h):
     return X[:-1], Y[:-1]
 
 class photon():
-    def __init__(self, x, y) -> None:
+    def __init__(self, x, y, b) -> None:
         self.position = (x, y)
         self.pathx = []
         self.pathy = []
         self.dead = False
         self.theta = np.arctan(y/x)
         self.radius = np.sqrt(x**2 + y ** 2)
+        self.b = b
 
     def kill(self) -> None:
         self.dead = True
 
     def move(self, T, step) -> None:
         r_schwarz = (2 * G * M) / (c**2)
-        r_equation = lambda t, theta, r: (t / r) * (1 - ((2 * G * M )/r))
-        theta_equation = lambda t, theta, r: -((theta * r_equation(t, theta, r)) / 2 * r)
+        #r_equation = lambda t, theta, r: (t / r) * (1 - ((2 * G * M )/r))
+        #theta_equation = lambda t, theta, r: -((theta * r_equation(t, theta, r)) / 2 * r)
 
-        B_r = lambda r : 1 - ((2 * G * M) / (c * c * r))
-        A_r = lambda r : (c * c * G * M) / (1 - 2 * c * c * G * M * r)
-        r_derivative = lambda t, phi, r : (B_r(r) * B_r(r) * A_r (r) * t) / (1 + B_r(r) * phi * phi + A_r(r) * r)
-        phi_derivative = lambda t, phi, r : - (r_derivative(t, phi, r)) / (r) * phi 
-
+        phi_derivative = lambda t, theta, r : self.b * (r-1) / (r*r*r) # (self.b / r) * (1 - (2 * M) / r)
+        r_derivative = lambda t, theta, r : (phi_derivative(t, theta, r) * phi_derivative(t, theta, r)) * ((r*r*r*r)/(self.b*self.b) - (r-1)*r ) #-(1-(2*M)/r) * np.sqrt(1- (1-(2*M)/r) * ((self.b * self.b) / (r * r)))
         """rs, thetas = runge_kutta_4(r_equation, 
                                    theta_equation, 
                                    self.radius, 
