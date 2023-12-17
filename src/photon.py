@@ -21,18 +21,30 @@ def runge_kutta_4(f, g, x0, y0, T, h):
         x_n = X[-1]
         y_n = Y[-1]
 
-        k1 = f(t, y_n, x_n)
-        l1 = g(t, y_n, x_n)
+        #k1 = f(t, y_n, x_n)
+        #l1 = g(t, y_n, x_n)
 
-        k2 = f(t + (h/2), y_n + (h/2) * k1, x_n + (h/2) * l1)
-        l2 = g(t + (h/2),  y_n + (h/2) * k1, x_n + (h/2) * l1)
+        k1 = f(x_n)
+        l1 = g(x_n)
 
-        k3 = f(t + (h/2), y_n + (h/2) * k2, x_n + (h/2) * l2)
-        l3 = g(t + (h/2), y_n + (h/2) * k2, x_n + (h/2) * l2)
+        #k2 = f(t + (h/2), y_n + (h/2) * k1, x_n + (h/2) * l1)
+        #l2 = g(t + (h/2),  y_n + (h/2) * k1, x_n + (h/2) * l1)
 
-        k4 = f(t + h, y_n + h * k3, x_n + h * l3)
-        l4 = g(t + h, y_n + h * k3, x_n + h * l3)
+        k2 = f(x_n + (h/2) * l1)
+        l2 = g(x_n + (h/2) * l1)
 
+        #k3 = f(t + (h/2), y_n + (h/2) * k2, x_n + (h/2) * l2)
+        #l3 = g(t + (h/2), y_n + (h/2) * k2, x_n + (h/2) * l2)
+
+        k3 = f(x_n + (h/2) * l2)
+        l3 = g(x_n + (h/2) * l2)
+
+        #k4 = f(t + h, y_n + h * k3, x_n + h * l3)
+        #l4 = g(t + h, y_n + h * k3, x_n + h * l3)
+
+        k4 = f(x_n + h * l3)
+        l4 = g(x_n + h * l3)
+        
         x_next = x_n + (h/6) * (l1 + 2*l2 + 2*l3 + l4)
         y_next = y_n + (h/6) * (k1 + 2*k2 + 2*k3 + k4)
 
@@ -55,18 +67,12 @@ class photon():
         self.dead = True
 
     def move(self, T, step) -> None:
-        r_schwarz = (2 * G * M) / (c**2)
-        #r_equation = lambda t, theta, r: (t / r) * (1 - ((2 * G * M )/r))
-        #theta_equation = lambda t, theta, r: -((theta * r_equation(t, theta, r)) / 2 * r)
+        r_schwarz = 1
+        b = self.b
 
-        phi_derivative = lambda t, theta, r : self.b * (r-1) / (r*r*r) # (self.b / r) * (1 - (2 * M) / r)
-        r_derivative = lambda t, theta, r : (phi_derivative(t, theta, r) * phi_derivative(t, theta, r)) * ((r*r*r*r)/(self.b*self.b) - (r-1)*r ) #-(1-(2*M)/r) * np.sqrt(1- (1-(2*M)/r) * ((self.b * self.b) / (r * r)))
-        """rs, thetas = runge_kutta_4(r_equation, 
-                                   theta_equation, 
-                                   self.radius, 
-                                   self.theta, 
-                                   T, step)
-        """
+        r_derivative = lambda r : (1-1/r)*np.sqrt( 1 - (1-1/r) * ((b*b) / (r*r) ) )
+        phi_derivative = lambda r : (b * (1-1/r))/(r*r)
+
         rs, thetas = runge_kutta_4(r_derivative, phi_derivative, self.radius, self.theta, T, step)
 
         # print(rs)

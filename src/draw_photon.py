@@ -45,7 +45,7 @@ for i in range(0, PHOTON_NR):
     #photons.append(photon(PHOTON_X, offset + PHOTON_SEP * i, 0.1 + 0.2 * i))
     
     r_0 = 100
-    b = 0.1 + 0.2 * i 
+    b = 0.5 + 0.1 * i 
     phi = np.arcsin(b / r_0)
     
     x = np.cos(phi) * r_0 
