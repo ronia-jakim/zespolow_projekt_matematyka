@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from photon import photon, G, M, c
 import numpy as np
 import matplotlib.pyplot as plt
@@ -27,8 +28,8 @@ def animation(j):
 r_schwarz = (2 * G * M) / c**2
 
 
-PHOTON_NR = 20
-PHOTON_SEP = 1
+PHOTON_NR = 1
+PHOTON_SEP = 5
 PHOTON_X = 1
 offset = 1
 
@@ -41,8 +42,17 @@ ll = []
 
 
 for i in range(0, PHOTON_NR):
-    photons.append(photon(PHOTON_X, offset + PHOTON_SEP * i))
+    #photons.append(photon(PHOTON_X, offset + PHOTON_SEP * i, 0.1 + 0.2 * i))
     
+    r_0 = 10
+    b = 0.5 + 0.1 * i 
+    phi = np.arcsin(b / r_0)
+    
+    x = np.cos(phi) * r_0 
+    y = np.sin(phi) * r_0
+
+    photons.append(photon(x, y, b))
+
     ln, = plt.plot([], [])
     ll.append(ln)
 
@@ -51,11 +61,14 @@ dt   = 0.01
 for p in photons: 
     p.move(Time, dt)
 
+print(photons[0].pathx)
+print(photons[0].pathy)
+
 def init():
     upper_lim = (1.5 * offset) + PHOTON_SEP * PHOTON_NR
     
-    ax.set_xlim(-10, 10)
-    ax.set_ylim(-10, 10)
+    ax.set_xlim(-20, 20)
+    ax.set_ylim(-20, 20)
 
     #ax.set_xlim(-0.5*upper_lim, offset + PHOTON_X)
     #ax.set_ylim(-offset, upper_lim)
@@ -99,7 +112,7 @@ def do_static_graph() :
     plt.ylabel('')
     plt.title(f'ścieżki fotonów w pobliżu czarnej dziury o masie {M}')
 
-    plt.savefig('../../latex/ilustracje/photon_path_1.png')
+    plt.savefig('./photon_path_1.png')
 
 
 if sys.argv[1] == "animacja":
