@@ -28,7 +28,7 @@ def animation(j):
 r_schwarz = (2 * G * M) / c**2
 
 
-PHOTON_NR = 20
+PHOTON_NR = 1
 PHOTON_SEP = 5
 PHOTON_X = 1
 offset = 1
@@ -44,7 +44,7 @@ ll = []
 for i in range(0, PHOTON_NR):
     #photons.append(photon(PHOTON_X, offset + PHOTON_SEP * i, 0.1 + 0.2 * i))
     
-    r_0 = 100
+    r_0 = 10
     b = 0.5 + 0.1 * i 
     phi = np.arcsin(b / r_0)
     
@@ -56,7 +56,7 @@ for i in range(0, PHOTON_NR):
     ln, = plt.plot([], [])
     ll.append(ln)
 
-Time = 200
+Time = 20
 dt   = 0.01
 for p in photons: 
     p.move(Time, dt)
@@ -67,8 +67,8 @@ print(photons[0].pathy)
 def init():
     upper_lim = (1.5 * offset) + PHOTON_SEP * PHOTON_NR
     
-    ax.set_xlim(-200, 200)
-    ax.set_ylim(-200, 200)
+    ax.set_xlim(-20, 20)
+    ax.set_ylim(-20, 20)
 
     #ax.set_xlim(-0.5*upper_lim, offset + PHOTON_X)
     #ax.set_ylim(-offset, upper_lim)
