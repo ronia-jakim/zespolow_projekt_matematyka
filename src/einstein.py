@@ -1,7 +1,26 @@
-from __future__ import division 
+import numpy as np
 
-import math,scipy.integrate,matplotlib.pyplot 
+from einsteinpy.geodesic import Timelike
+from einsteinpy.plotting.geodesic import StaticGeodesicPlotter
 
-class EnumError(Exception): def __init__(self,varname,varlist): Exception.__init__(self,varname+" must be one of "+", ".join(varlist))
+position = [40., np.pi / 2, 0.]
+momentum = [0.5, 0., 0.5]
+a = 0.
+steps = 5500
+delta = 1.
 
-Reference: https://www.physicsforums.com/threads/using-black-holes-to-time-travel-into-the-future.938858/page-2#post-5943810
+geod = Timelike(
+    metric="Schwarzschild",
+    metric_params=(a,),
+    position=position,
+    momentum=momentum,
+    steps=steps,
+    delta=delta,
+    return_cartesian=True
+)
+
+sgpl = StaticGeodesicPlotter()
+sgpl.plot2D(geod, coordinates=(1, 2))
+#sgpl.plot2D(geod, coordinates=(2, 3))
+sgpl.show()
+
