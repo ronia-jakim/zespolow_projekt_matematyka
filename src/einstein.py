@@ -1,15 +1,17 @@
 import numpy as np
 
-from einsteinpy.geodesic import Timelike
+from einsteinpy.geodesic import Nulllike
 from einsteinpy.plotting.geodesic import StaticGeodesicPlotter
+from einsteinpy.plotting.geodesic import GeodesicPlotter
 
-position = [40., np.pi / 2, 0.]
-momentum = [0.5, 0., 0.5]
+position = [3.2, np.pi / 2, 0.]
+# momentum = [0., 0., 3.83405]
+momentum = [0., 0., 0.01]
 a = 0.
 steps = 5500
 delta = 1.
 
-geod = Timelike(
+geod = Nulllike(
     metric="Schwarzschild",
     metric_params=(a,),
     position=position,
@@ -19,8 +21,7 @@ geod = Timelike(
     return_cartesian=True
 )
 
-sgpl = StaticGeodesicPlotter()
-sgpl.plot2D(geod, coordinates=(1, 2))
-#sgpl.plot2D(geod, coordinates=(2, 3))
-sgpl.show()
+gpl = GeodesicPlotter()
+gpl.plot(geod)
+gpl.show()
 
