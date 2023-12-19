@@ -19,4 +19,4 @@ W 2019 roku otrzymaliśmy pierwsze zdjęcie czarnej dziury, natomiast w maju 202
   supplement: [Figura]
 ) <time_dilation>
 
-Z matematycznego punktu widzenia, czarna dziura jest rozmaitością różniczkowalną z tensorem metrycznym, który opisuje jak zakrzywiona jest przestrzeń wokół niej. Aby więc dokładnie zrozumieć jak zachowują się cząstęczki w jej pobliżu, należy zrozumieć czym są rozmaitości i jak wygląda ich geometria.
+Z matematycznego punktu widzenia, czarna dziura jest rozmaitością różniczkowalną z tensorem metrycznym, który opisuje jak zakrzywiona jest przestrzeń wokół niej. Aby więc dokładnie zrozumieć jak zachowują się cząstęczki w jej pobliżu, należy zrozumieć czym są rozmaitości.// i jak wygląda ich geometria.

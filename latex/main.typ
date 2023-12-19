@@ -62,15 +62,19 @@
 
 #include "02_rozmaitosci_definicja.typ"
 
-= Matematyczna podróż do czarnej dziury
+= Szybki kurs geometrii
 
 #include "03_zakrzywiona_przestrzen.typ"
 
 #include"04_wyliczenie_rownan_koneksja.typ"
 
+= Matematyczna podróż do czarnej dziury
+
+#include "05_christoffel.typ"
+
 = Wyniki symulacji
 
-#include"05_jakie_algorytmy.typ" 
+#include"05_jakie_algorytmy.typ"
 
 #bibliography(
   "literatura.bib",

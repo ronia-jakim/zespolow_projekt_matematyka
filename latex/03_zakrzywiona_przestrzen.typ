@@ -31,7 +31,7 @@ $ g_(mu, nu) = mat(
   1, 0;
   0, sin^2(theta);
 ) $
-lub równoważnie wzorem $"ds"^2 = d theta^2 + sin^2(theta) d phi^2$, który wynika z wyliczenia długości wektora powstałego przez zmianę kąta $phi$ o $d phi$ oraz kąta $theta$ o $d theta$.
+lub równoważnie wzorem $"ds"^2 = d theta^2 + sin^2(theta) d phi^2$, który wynika z wyliczenia długości wektora powstałego zmianę kąta $phi$ o niewielkie zaburzenie $d phi$ oraz kąta $theta$ o niewielkie zaburzenie $d theta$.
 
 Wiemy już, że pomimo braku przyśpieszenia na zakrzywionej czasoprzestrzeni wokół dziury foton będzie sprawiał wrażenie skręcającego. Chcielibyśmy teraz umieć zrekonstruować jak obserwator w $bb(R)^3$ widzi trasę fotonu w otoczeniu $"BH"$ mając tylko początkowe położenie i prędkość cząsteczki. 
 
