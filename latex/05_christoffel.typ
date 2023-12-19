@@ -78,9 +78,9 @@ bo $u'=c=1$ w naszym układzie. Stąd widać, że $u=0$ oraz
 $ frac(2, 3)=u=frac(1, r) => r = frac(3, 2) $ 
 są punktami przegięcia funkcji $u(phi)$. Dalej, dla 
 $ frac(2, 3)< u = frac(1, r) => r < frac(3, 2) $ 
-pochodna $u'(phi)$ powinna być rosnąca, a dla 
+pochodna $u'(phi)$ powinna być rosnąca (czyli $r'=-r^2u'$ maleje), a dla 
 $ frac(2, 3) > u=frac(1, r) => r > frac(3, 2) $ 
-powinna być malejąca.
+powinna być malejąca ($r'=-r^2u'$ rośnie).
 
 Możemy więc obserwować pierwiastki powyższej równości, by sprawdzać, kiedy $r(phi)$ jest stałe. Co więcej, możemy również sprawdzić przy jakim położeniu foton zapadnie się w czarną dziurę, a kiedy będzie w stanie uciec z jej pobliża.
 
