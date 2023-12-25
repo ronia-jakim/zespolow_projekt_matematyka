@@ -1,0 +1,53 @@
+\subsection{Pojęcie rozmaitości Riemannowskiej}
+
+%Rozmaitości różniczkowalne pozwalają na badanie różnych przestrzeni przez pryzmat przestrzeni $bb(R)^n$. Mówimy, że $M$ jest rozmaitością gładką z atlasem, czyli rodziną map, $cal(A)={ (U_alpha, phi_alpha) }$, jeśli
+%- zbiory $U_alpha$ tworzą otwarte pokrycie $M$
+%- odwzorowania $phi_alpha:U_alpha arrow overline(U_alpha) subset bb(R)^n$ są homeomorfizmami na otwarte podzbiory $bb(R)^n$, a liczba $n$ jest dobrze określona dla $M$
+%- dowolne dwie mapy $(U_alpha, phi_alpha)$ i $(U_beta, phi_beta)$ są *gładko zgodne*, tzn. #list(indent:10pt,
+%  [$U_alpha sect U_beta=emptyset$ lub],
+%  [mapy przejścia $phi_alpha phi_beta^(-1)$ i $phi_beta phi_alpha^(-1)$ są gładkimi odwzorowaniami pomiędzy podzbiorami $bb(R)^n$.]
+%)
+
+Rozmaitość to przestrzeń matematyczna $M$, która wokół każdego punktu $p \in M$ posiada otwarte otoczenie $U_p$, które przypomina pewien podzbiór przestrzeni $\R^n$. Na przykład dla rozmaitości topologicznych owo podobieństwo będzie oznaczało istnienie homeomorfizmu 
+$$ \phi_p: U_p \to \overline{U_p} \subseteq \R^n, $$
+gdzie $\overline{U_p} \subseteq \R^n$ jest otwartym zbiorem. W niniejszej pracy zajmiemy się opisem czarnej dziury przez Schwarzschilda, który modeluje przestrzeń wokół tej anomalii jako rozmaitość różniczkowalną z tensorem metrycznym, czyli rozmaitość Riemannowską. Dokładna definicja rozmaitości różniczkowalnej znajduje się w {\color{red}dodatku}.
+
+
+%Dla dowolnego punktu $p in M$ mówimy, że $T_p M$ jest *przestrzenią styczną* w punkcie $p$, czyli przestrzenią zawierającą wektory styczne w tym punkcie. $"TM"$ to z kolei rozłączna suma po wszystkich przestrzeniach stycznych, którą nazywamy *wiązką styczną*. Bardzo ciekawą własnością przestrzeni stycznych jest ich liniowość @leeSmoothManifolds, tzn. dla każdego $p in M$ przestrzeń $T_p M$ jest przestrzenią wektorową wymiaru $n$, a jeśli $(U, phi)$, $phi=(phi_1,...,phi_n)$ jest mapą wokół $p$, to zbiór
+%$ { diff phi_1,..., diff phi_n }, $
+%gdzie $diff phi_j$ można również oznaczyć $frac(diff, diff phi_j)$, jest bazą $T_p M$.
+
+Przestrzenie styczne w dowolnym $p\in M$ są przestrzeniami wektorowymi oznaczanymi $T_pM$ (dokładna definicja w {\color{red}dodatku}). W wielu przypadkach możemy więc zdefiniować na nich iloczyn skalarny, w tym ujęciu nazywany \textbf{tensorem metrycznym} lub też prościej metryką.
+
+Formalnie, tensor metryczny to rodzina dwuliniowych funkcji
+$$ g_p:T_p M \times T_p M \to \R $$
+zdefiniowana w każdym punkcie $p \in M$. Każda taka funkcja jest dodatnio określonym iloczynem wewnętrznym na $T_p M$, czyli pociąga za sobą normę 
+$$ \|v\|_p=\sqrt{g_p (v, v)}. $$
+Tensor metryczny określony na $T M$ przypisuje więc dwóm wektorom stycznym $X_p, Y_p$ zaczepionym w punkcie $p$ rozmaitości $M$ wartość
+$$ g(X_p, Y_p):= g_p (X_p, Y_p). $$
+Ponieważ $g$ jest odwzorowaniem liniowym na $T_p M$ dla każdego $p \in M$, to zapisuje się ono macierzą, którą nazwiemy $g$. Jej wyraz odpowiadający $g(\partial \phi_i, \partial \phi_j)$ będziemy oznaczać $g_{i,j}$.
+
+Warto zaznaczyć, że mając bazę dualną $\{d \phi^i\}$ do $\{ \partial \phi_i\}$, tensor metryczny możemy zapisać jako
+$$ g=\sum_{i, j <= n} g_{i, j} d \phi^i \otimes d \phi^j. $$
+
+W tej pracy zajmujemy się metryką Schwarzschilda zdefiniowaną na podzbiorze $\R \times (0, +\infty) \times S^2$ o znakach $(-, +, +, +)$, który jest standardowo zapisywany jako
+$$ g = c^2 d \tau^2 = -\frac{r - r_s}{r}\cdot c^2d t^2 + \left( \frac{r - r_s}{r}\right)^{-1} d r^2 + r^2(d \theta^2 + \sin^2(\theta) d \phi^2) $$
+lub w postaci macierzy \cite{notatkiUoCSD}
+$$
+g_{\mu, \nu} = \begin{bmatrix}
+  -\frac{1 - r_s}{r}\cdot c^2 & 0                               & 0   & 0 \\
+  0                 & \left(\frac{1 - r_s}{r}\right)^{-1} & 0   & 0 \\
+  0                 & 0                                   & r^2 & 0 \\ 
+  0                 & 0                                   & 0   & r^2 \sin^2(\theta)
+\end{bmatrix}, 
+$$
+gdzie 
+\begin{itemize}
+  \item $r_s$ to promień Schwarzschilda określonej czarnej dziury, 
+  \item $c$ oznacza prędkość światła, 
+  \item $\tau$ to czas właściwy (czyli mierzony w pobliżu czarnej dziury), 
+  \item $t$ to czas bezwzględny (mierzony nieskończenie daleko od czarnej dziury), 
+  \item $\theta$ to kąt po południku, 
+  \item a $\phi$ to kąt po równoleżniku.
+\end{itemize}
+
