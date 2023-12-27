@@ -7,5 +7,6 @@
 \contentsline {section}{\numberline {3}Matematyczna podróż do czarnej dziury}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Symbole Christoffela}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Równanie orbity}{8}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Dodatek}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}O rozmaitościach różniczkowalnych}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {3.3}Analiza pierwiastków równania orbity}{9}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Dodatek}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}O rozmaitościach różniczkowalnych}{12}{subsection.4.1}%

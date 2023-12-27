@@ -4,6 +4,8 @@ from scipy.integrate import odeint
 from math import hypot
 
 
+M=0.5
+
 def u_derivatives(r, phi):
     return [r[1], -r[0] + (3/2) * r[0] ** 2]
 
@@ -54,4 +56,9 @@ for i in start_values:
 ax.set_xlim(-5, 5)
 ax.set_ylim(-5, 5)
 ax.add_patch(circle1)
+
+plt.title(f'ścieżki fotonów w pobliżu czarnej dziury o masie {M}')
+
+plt.savefig('./photon_path_1.png')
+
 plt.show()

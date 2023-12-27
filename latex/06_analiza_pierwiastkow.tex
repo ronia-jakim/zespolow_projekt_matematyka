@@ -1,0 +1,55 @@
+\subsection{Analiza pierwiastków równania orbity}
+
+Równanie orbity \ref{zmiana predkosci} jest wielomianem $3$ stopnia o współczynnikach rzeczywistych. Z tego można wywnioskować, że będzie ono miało co najmniej jeden pierwiastek rzeczywisty i jeden lub dwa sprzężone ze sobą pierwiastki zespolone. Zapiszmy je więc w formie
+$$\left(\frac{du}{d\phi}\right)^2=(u-u_1)(u-u_2)(u-u_3).$$
+Dzięki analizie pierwiastków tego równania możemy zbadać maksima, minima oraz punkty przegięcia $u$.
+
+Zacznijmy od obserwacji, że przez przyrównanie współczynników obu postaci równania \ref{zmiana predkosci} możemy wywnioskować
+\begin{align*}
+  1&=u_1+u_2+u_3\\
+  \frac{1}{b^2}&=-u_1u_2u_3.
+\end{align*}
+Co więcej, różniczkując obie strony względem $\phi$ dla $u'\neq 0$ dostajemy równanie różniczkowe drugiego rzędu
+$$2u''=(u-u_2)(u-u_3)+(u-u_1)(u-u_2)+(u-u_1)(u-u_3).$$
+
+Analizę zacznijmy od przypadku, kiedy wszystkie pierwiastki są rzeczywiste i niech 
+$$u_1<u_2<u_3.$$ 
+Wykres $|u'|$ w zależności od $\phi$ wygląda następująco:
+\begin{center}
+  \begin{tikzpicture}
+    \begin{axis}[
+        xmin=-4,xmax=4,
+        ymin=-0.5,ymax=2,
+        axis x line=middle,
+        axis y line = middle,
+        y axis line style={opacity=0},
+        xlabel={},
+        ylabel={},
+        %ticks style={draw=none},
+        ytick=\empty,
+        xtick=\empty
+        ]
+        \addplot[no marks, samples=200, domain=-1:0] {sqrt((x + 1) * (x - 0) * (x - 1.5))};
+        \addplot[no marks, samples=200, domain=1.5:4] {sqrt((x + 1) * (x - 0) * (x - 1.5))};
+    \end{axis}
+    \filldraw (2.57, 1.15) circle (2pt) node [above left] {$u_1$};
+    \filldraw (3.4, 1.15) circle (2pt) node [above right] {$u_2$};
+    \filldraw (4.7, 1.15) circle (2pt) node [above right] {$u_3$};
+  \end{tikzpicture}
+\end{center}
+
+Dla $u>u_3$ wartość $u''$ jest liczbą dodatnią. W takim razie, z ciągłości pochodnej możemy wywnioskować, że $u''(u_3)\geq0$. W takim razie dla $u>u_3$ funkcja $u$ jest wypukła. Oznacza to, że kiedy znajdujemy się ponad $u_3$, $u$ rośnie do nieskończoności, a $r$ z kolei zbiega do zera i wówczas foton zapada się w czarną dziurę. 
+
+Ponieważ 
+$$u_1u_2u_3=-\frac{1}{b^2}<0,$$ 
+to co najmniej jeden pierwiastek jest ujemny. Z warunku 
+$$1=u_1+u_2+u_3$$ 
+wiemy, że dokładnie jeden pierwiastek musi być ujemny i jest nim $u_1$. 
+
+Zauważmy, że odcinek między $u_1$ a $u_2$ na wykresie jest górną połową elipsy - foton oscylowałby między tymi dwoma pierwiastkami, ale ponieważ $u_1$ jest ujemne, to jedynie pierwsza część tej oscylacji faktycznie się wykona. Oznacza to, że $u$ lecąc od $0$, trafi do $u_2$ i zawróci z powrotem do $0$, w kierunku $u_1$. To znaczy, że foton bardzo daleko od czarnej dziury przyleci do $r=\frac{1}{u_2}$, po czym na powrót odleci w kierunku nieskończoności.
+
+Enigmatyczny jest przypadek dla $u$ spomiędzy $u_2$ a $u_3$, gdyż w tym przypadku $u'$ przyjmuje wartość zespoloną, jeśli $u_2\neq u_3$. Ponieważ foton jest w stanie pojawić się w dowolnej odległości od czarnej dziury, to musi być $u_2=u_3$ i wówczas istnieje tylko jedna obserwowalna orbita fotonu.
+
+Jeśli z kolei tylko jeden pierwiastek jest rzeczywisty, to musi on być ujemny: niech $u_1$ będzie jedynym rzeczywistym pierwiastkiem, a $u_2=x+yi=\overline{u_3}$. Wtedy
+$$-\frac{1}{b^2}=u_1u_2u_3=u_1(x+yi)(x-y_i)=u_1\underbrace{(x^2+y^2)}_{>0}$$
+i pozostaje jedynie $u_1<0$. To znowu znaczyłoby, że nie istnieje żadna orbita stacjonarna, co jest niezgodne z informacją o trasie fotonu wyciągniętą z równania $u''$..

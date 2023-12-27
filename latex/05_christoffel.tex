@@ -84,10 +84,20 @@ Przekształcając teraz drugi warunek geodezyjnej \emph{nullowej}, dostajemy
 a stosując podstawienie 
 $$u=\frac{1}{r},\quad -r^2du=dr$$
 wyraz $\frac{1}{b^2}$ stanie się wyrazem wolnym, znikającym po różniczkowaniu względem $\phi$:
-\begin{align*}
-  \left(\frac{du}{d\phi}\right)^2&=\frac{1}{b^2}-u^2+u^3\\ 
-  u'' &=u\left(\frac{3}{2}u-1\right)
-\end{align*}
+\begin{align}
+  \left(\frac{du}{d\phi}\right)^2&=\frac{1}{b^2}-u^2+u^3\label{rownanie_orbity}\\ 
+  u'' &=u\left(\frac{3}{2}u-1\right)\label{zmiana predkosci}
+\end{align}
+
+\renewcommand{\figurename}{Wykres}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{ilustracje/sceizki_wykres.png}
+  \caption{Ścieżki fotonów w pobliżu czarnej dziury o masie $M=\frac{1}{2}$ i promieniu Schwarzschilda $r_s=1$ ($c=1=G$) uzyskane przy pomocy języka Python.}\label{wykres fotonow}
+\end{figure}
+
+Powyższe równanie \ref{zmiana predkosci} w jasny sposób pokazuje, że orbita stacjonarna w przypadku czarnej dziury o promieniu Schwarzschilda $1$ pojawia się dla $r=\frac{3}{2}$. Wspomniana orbita została zaznaczona na wykresie \ref{wykres fotonow}, który prezentuje również rozmiar czarnej dziury (czarne koło pośrodku). Równanie \ref{zmiana predkosci} zostało rozwiązane przy pomocy funkcji \verb+odeint+ z biblioteki \verb+scipy+ języka Python i trajektorie pięciu fotonów, z czego część nie zapada się w czarną dziurę, zostały pokazane na wykresie \ref{wykres fotonow}
+
 
 
 
