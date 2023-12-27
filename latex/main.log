@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.12.18)  27 DEC 2023 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.12.18)  27 DEC 2023 23:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/extsizes/extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/extsizes/size14.clo
-File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 ) (/usr/share/texmf-dist/tex/latex/base/exscale.sty
 Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
@@ -695,15 +695,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \textheight=717.00945pt
 * \oddsidemargin=-15.36447pt
 * \evensidemargin=-15.36447pt
-* \topmargin=-48.67393pt
-* \headheight=14.0pt
+* \topmargin=-46.67393pt
+* \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=14.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=24.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -749,54 +749,62 @@ Package pdftex.def Info: ilustracje/zakazany_donut.jpg  used on input line 23.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)
+) (./02_rozmaitosci_definicja.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 
-      [1 <./ilustracje/Time_near_black_hole.png>] (./02_rozmaitosci_definicja.tex
+l.12 ... U_p \to \overline{U_p} \subseteq \R^n, $$
+                                                   [1 <./ilustracje/Time_near_black_hole.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 F
-      ormalnie, tensor metryczny to rodzina dwuliniowych funkcji [2 <./ilustracje/zakazany_donut.jpg>]) (./03_zakrzywiona_przestrzen.tex [3] [4]) (./04_wyliczenie_rownan_koneksja.tex [5]) (./05_christoffel.tex [6] [7] [8]
-<ilustracje/sceizki_wykres.png, id=136, 361.35pt x 361.35pt>
+l.30 W
+      arto zaznaczyÄ‡, Å¼e majÄ…c bazÄ™ dualnÄ… $\{d \phi^i\}$ do $\{ \parti... [2 <./ilustracje/zakazany_donut.jpg>]) (./03_zakrzywiona_przestrzen.tex [3]) (./04_wyliczenie_rownan_koneksja.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4]) (./05_christoffel.tex [5]
+Overfull \hbox (19.62704pt too wide) in paragraph at lines 11--12
+[]\T1/cmr/m/n/12 (-20) Stosuj¡c wi¦c powy»sze wiado-mo±ci dla przy-padku fo-tonu porusza-j¡cego si¦ w me-tryce Schwarzschilda
+ []
+
+[6] [7]
+<ilustracje/sceizki_wykres.png, id=133, 361.35pt x 361.35pt>
 File: ilustracje/sceizki_wykres.png Graphic file (type png)
 <use ilustracje/sceizki_wykres.png>
 Package pdftex.def Info: ilustracje/sceizki_wykres.png  used on input line 95.
 (pdftex.def)             Requested size: 386.95894pt x 386.96048pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 99.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./06_analiza_pierwiastkow.tex [9] [10 <./ilustracje/sceizki_wykres.png>]) (./10_dodatek_rozmaitosci.tex [11]) (./main.bbl
+) (./06_analiza_pierwiastkow.tex [8 <./ilustracje/sceizki_wykres.png>] [9]) (./10_dodatek_rozmaitosci.tex) (./main.bbl [10]
 LaTeX Info: Redefining \tempurl on input line 59.
 LaTeX Info: Redefining \tempurl on input line 73.
- [12]) [13] (./main.aux)
+) [11] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EC9CB21EFE3E04779CFE5239D786D8E8;2315.
  ) 
 Here is how much of TeX's memory you used:
- 36301 strings out of 476025
- 837494 string characters out of 5796531
- 1864388 words of memory out of 5000000
- 55980 multiletter control sequences out of 15000+600000
- 529089 words of font info for 137 fonts, out of 8000000 for 9000
+ 36302 strings out of 476025
+ 837455 string characters out of 5796531
+ 1865388 words of memory out of 5000000
+ 56001 multiletter control sequences out of 15000+600000
+ 529720 words of font info for 131 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,9n,107p,1193b,2000s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on main.pdf (15 pages, 389519 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (13 pages, 402614 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
- 36 named destinations out of 1000 (max. 500000)
- 27260 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 29308 words of extra memory for PDF output out of 29859 (max. 10000000)
 
