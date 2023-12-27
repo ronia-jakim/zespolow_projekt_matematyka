@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1703523839 "main.aux" "main.bbl" "main" 1703524054 0
+["bibtex main"] 1703523839 "main.aux" "main.bbl" "main" 1703677471 0
   "./literatura.bib" 1703523609 1406 614dc26006ec3abbf054adce73c8af5d ""
   "/usr/share/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1689853683 90333 ccee583820c555b8fd3c6d1b9f362b14 ""
-  "main.aux" 1703524054 3416 3b08d9818d485536f02afe9093c7dd5f "pdflatex"
+  "main.aux" 1703677471 3416 3b08d9818d485536f02afe9093c7dd5f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1703524053 "main.tex" "main.pdf" "main" 1703524054 2
+["pdflatex"] 1703677470 "main.tex" "main.pdf" "main" 1703677471 2
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1689853683 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1689853683 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -202,14 +202,14 @@
   "03_zakrzywiona_przestrzen.tex" 1703512732 3458 f60b1a209de8fcc3eadcd43c92db901c ""
   "04_wyliczenie_rownan_koneksja.tex" 1703523093 7615 c18cf3c13d3729ff7517f11dd770be18 ""
   "05_christoffel.tex" 1703523263 11549 1c15f5be73722ac9b5db3423db527bdd ""
-  "10_dodatek_rozmaitosci.tex" 1703523573 2152 be2b2be6b8352b75ca229a23c7ee10a2 ""
+  "10_dodatek_rozmaitosci.tex" 1703677469 2163 40d5be9bdf68fe6b8154764c1cafb44a ""
   "ilustracje/Time_near_black_hole.png" 1702977605 30612 41eb7360fd51f60a74a484eaa441a4a9 ""
   "ilustracje/zakazany_donut.jpg" 1702977605 40236 f5ec0e6666f37759af7c298322070a74 ""
-  "main.aux" 1703524054 3416 3b08d9818d485536f02afe9093c7dd5f "pdflatex"
+  "main.aux" 1703677471 3416 3b08d9818d485536f02afe9093c7dd5f "pdflatex"
   "main.bbl" 1703523839 2878 3bbab26448cd7cfe0a7870163e41d140 "bibtex main"
-  "main.out" 1703524054 2062 8461de11f9c26cf7fed6670e9b619cbd "pdflatex"
+  "main.out" 1703677471 2062 8461de11f9c26cf7fed6670e9b619cbd "pdflatex"
   "main.tex" 1703524052 910 d6b7f71c92ab1b366a3b6de16e54b8ef ""
-  "main.toc" 1703524054 976 122c0fe0f32db576a947789a3bc2836e "pdflatex"
+  "main.toc" 1703677471 976 122c0fe0f32db576a947789a3bc2836e "pdflatex"
   "preamble.tex" 1703524048 799 40b411952db93b32bc5dc7b41c99b9da ""
   (generated)
   "main.aux"
