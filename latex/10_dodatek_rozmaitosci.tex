@@ -1,0 +1,21 @@
+\subsection{O rozmaitościach różniczkowalnych}
+
+Rozmaitości różniczkowalne pozwalają na badanie różnych przestrzeni przez pryzmat przestrzeni $\R^n$. Mówimy, że $M$ jest rozmaitością gładką z atlasem, czyli rodziną map, $\mathcal{A}=\{ (U_\alpha, \phi_\alpha) \}$, jeśli
+\begin{itemize}
+  \item zbiory $U_\alpha$ tworzą otwarte pokrycie $M$
+  \item odwzorowania $\phi_\alpha:U_\alpha \to \overline{U_\alpha} \subseteq \R^n$ są homeomorfizmami na otwarte podzbiory $\R^n$, a liczba $n$ jest dobrze określona dla $M$
+  \item dowolne dwie mapy $(U_\alpha, \phi_\alpha)$ i $(U_\beta, \phi_\beta)$ są \emph{gładko zgodne}, tzn.
+    \begin{itemize}
+      \item $U_\alpha \cap U_\beta=\emptyset$ lub
+      \item mapy przejścia $\phi_\alpha \phi_\beta^{-1}$ i $\phi_\beta \phi_\alpha^{-1}$ są gładkimi odwzorowaniami pomiędzy podzbiorami $\R^n$.
+    \end{itemize}
+\end{itemize}
+
+Dla dowolnego punktu $p \in M$ mówimy, że $T_p M$ jest \emph{przestrzenią styczną} w punkcie $p$, czyli przestrzenią zawierającą wektory styczne w tym punkcie. Definiować wektory styczne zaczynamy od zdefiniowania zbioru krzywych zaczepionych w punkcie $p \in M$, czyli zbioru par krzywych $c: (-\varepsilon, \varepsilon) \to M$ i liczb $t_0 \in (-\varepsilon, \varepsilon)$ takich, że $c(t_0)=p$. Jeśli $(U, \phi)$ jest mapą wokół $p \in M$, to definiujemy na zbiorze krzywych zaczepionych w $p$ relację równoważności 
+$$ [c_0, t_0] \sim [c_1, t_1] \iff (\phi_p \circ  c_0)'(t_0)=(\phi_p \circ  c_1)'(t_1). $$
+Klasy równoważności par $[c, t_0]$ to właśnie wektory styczne należące do $T_p M$.
+
+
+$T M$ to z kolei rozłączna suma po wszystkich przestrzeniach stycznych, którą nazywamy \emph{wiązką styczną}. Bardzo ciekawą własnością przestrzeni stycznych jest ich liniowość \cite{leeSmoothManifolds}, tzn. dla każdego $p \in M$ przestrzeń $T_p M$ jest przestrzenią wektorową wymiaru $n$, a jeśli $(U, \phi)$, $\phi=(\phi_1,...,\phi_n)$ jest mapą wokół $p$, to zbiór
+$$ { \partial \phi_1,..., \partial \phi_n }, $$
+gdzie $\partial \phi_j$ można również oznaczyć $\frac{\partial}{\partial \phi_j}$, jest bazą $T_p M$.
