@@ -18,46 +18,47 @@ Warning--empty publisher in morseTheory
 Warning--empty address in morseTheory
 Warning--empty address in leeSmoothManifolds
 Warning--empty address in mechanics
+Warning--empty address in kolejnaFizyka
 Warning--empty address in generalRelWald
-You've used 7 entries,
+You've used 8 entries,
             5981 wiz_defined-function locations,
-            1513 strings with 18587 characters,
-and the built_in function-call counts, 5144 in all, are:
-= -- 507
-> -- 119
+            1519 strings with 18691 characters,
+and the built_in function-call counts, 5850 in all, are:
+= -- 575
+> -- 136
 < -- 0
-+ -- 30
-- -- 59
-* -- 316
-:= -- 579
-add.period$ -- 39
-call.type$ -- 7
-change.case$ -- 38
-chr.to.int$ -- 7
-cite$ -- 15
-duplicate$ -- 500
-empty$ -- 352
-format.name$ -- 49
-if$ -- 1080
++ -- 34
+- -- 66
+* -- 359
+:= -- 660
+add.period$ -- 45
+call.type$ -- 8
+change.case$ -- 43
+chr.to.int$ -- 8
+cite$ -- 17
+duplicate$ -- 574
+empty$ -- 404
+format.name$ -- 56
+if$ -- 1235
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 108
-num.names$ -- 49
-pop$ -- 185
+missing$ -- 12
+newline$ -- 116
+num.names$ -- 56
+pop$ -- 215
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 104
 quote$ -- 0
-skip$ -- 193
+skip$ -- 219
 stack$ -- 0
-substring$ -- 375
-swap$ -- 41
+substring$ -- 424
+swap$ -- 47
 text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 135
-warning$ -- 8
-while$ -- 50
+type$ -- 150
+warning$ -- 9
+while$ -- 57
 width$ -- 0
-write$ -- 179
-(There were 8 warnings)
+write$ -- 198
+(There were 9 warnings)

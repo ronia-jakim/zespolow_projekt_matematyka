@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -94,6 +94,14 @@
 \bibfield{author}{\bibinfo{person}{Janet D.~Finch Louis N.~Hand}.} \bibinfo{year}{1998}\natexlab{}.
 \newblock \bibinfo{booktitle}{\emph{Analytical Mechanics} (\bibinfo{edition}{2} ed.)}.
 \newblock \bibinfo{publisher}{Cambridge University Press}.
+\newblock
+
+
+\bibitem[Wakker(2015)]%
+        {kolejnaFizyka}
+\bibfield{author}{\bibinfo{person}{Karel~F. Wakker}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Fundamentals of Astrodynamics}}.
+\newblock \bibinfo{publisher}{Delft University of Technology}.
 \newblock
 
 

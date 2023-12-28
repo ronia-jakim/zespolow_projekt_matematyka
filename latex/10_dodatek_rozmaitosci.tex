@@ -12,7 +12,7 @@ Rozmaitości różniczkowalne pozwalają na badanie różnych przestrzeni przez 
 \end{itemize}
 
 Dla dowolnego punktu $p \in M$ mówimy, że $T_p M$ jest \emph{przestrzenią styczną} w punkcie $p$, czyli przestrzenią zawierającą wektory styczne w tym punkcie. Definiować wektory styczne zaczynamy od zdefiniowania zbioru krzywych zaczepionych w punkcie $p \in M$, czyli zbioru par krzywych $c: (-\varepsilon, \varepsilon) \to M$ i liczb $t_0 \in (-\varepsilon, \varepsilon)$ takich, że $c(t_0)=p$. Jeśli $(U, \phi)$ jest mapą wokół $p \in M$, to definiujemy na zbiorze krzywych zaczepionych w $p$ relację równoważności 
-$$ [c_0, t_0] \sim [c_1, t_1] \iff (\phi_p \circ  c_0)'(t_0)=(\phi_p \circ  c_1)'(t_1). $$
+$$ [c_0, t_0] \sim [c_1, t_1] \iff (\phi \circ  c_0)'(t_0)=(\phi \circ  c_1)'(t_1). $$
 Klasy równoważności par $[c, t_0]$ to właśnie wektory styczne należące do $T_p M$.
 
 
@@ -20,7 +20,7 @@ $T M$ to z kolei rozłączna suma po wszystkich przestrzeniach stycznych, któr�
 $$ { \partial \phi_1,..., \partial \phi_n }, $$
 gdzie $\partial \phi_j$ można również oznaczyć $\frac{\partial}{\partial \phi_j}$, jest bazą $T_p M$.
 
-Pole wektorowe to z kolei funkcja $X:M\to TM$ taka, że $X(p)\in T_pM$. Często zapisujemy $X(p)=X_p$. Jeśli teraz $c:I\to M$ jest krzywą na rozmaitości $M$, to mówimy, że pole $X$ jest funkcją gładką $X:I\to TM$ taką, że $X(t)\in T_{c(t)}M$ dla każdego $t\in I$.
+Pole wektorowe to z kolei funkcja $X:M\to TM$ taka, że $X(p)\in T_pM$. Często zapisujemy $X(p)=X_p$. Jeśli teraz $c:I\to M$ jest krzywą na rozmaitości $M$, to mówimy, że pole $X$ jest polem wektorowym wzdłuż $c$, jeśli jest funkcją gładką $X:I\to TM$ taką, że $X(t)\in T_{c(t)}M$ dla każdego $t\in I$.
 
 \subsection{Koneksja Levi-Civity}
 \label{dodatek koneksja}
