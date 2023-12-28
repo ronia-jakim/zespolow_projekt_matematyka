@@ -10,4 +10,4 @@
 \contentsline {subsection}{\numberline {3.3}Analiza pierwiastków równania orbity}{9}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Dodatek}{12}{section.4}%
 \contentsline {subsection}{\numberline {4.1}O rozmaitościach różniczkowalnych}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Koneksja Levi-Civity}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Koneksja Levi-Civity}{13}{subsection.4.2}%

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1703769297 "main.aux" "main.bbl" "main" 1703769298 0
+["bibtex main"] 1703773892 "main.aux" "main.bbl" "main" 1703773894 0
   "./literatura.bib" 1703769219 1823 3e4a3e1e421d99b89e3dbc0652db9a2b ""
   "/usr/share/texmf-dist/bibtex/bst/acmart/ACM-Reference-Format.bst" 1689853683 90333 ccee583820c555b8fd3c6d1b9f362b14 ""
-  "main.aux" 1703769298 5268 4327ecd20b4b4e5b1a1d249e475da9da "pdflatex"
+  "main.aux" 1703773894 5268 d5f69cbeff04b4e1d145d2038e34b3f2 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1703769297 "main.tex" "main.pdf" "main" 1703769298 0
+["pdflatex"] 1703773893 "main.tex" "main.pdf" "main" 1703773894 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1689853683 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1689853683 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -243,16 +243,16 @@
   "03_zakrzywiona_przestrzen.tex" 1703764812 3459 618994d80d9734c2c36dc99906d51827 ""
   "04_wyliczenie_rownan_koneksja.tex" 1703765459 7145 7e279c2dc0f4a3cfa84ceef9234f7507 ""
   "05_christoffel.tex" 1703769171 12603 38822996328a5c10c0e8e81320ff3fc7 ""
-  "06_analiza_pierwiastkow.tex" 1703717692 3593 aaf2efc3369bc11005538c971b8658c7 ""
+  "06_analiza_pierwiastkow.tex" 1703773891 4113 fb7ce5bfa21b5b4d4f9bb81819d594ce ""
   "10_dodatek_rozmaitosci.tex" 1703768173 5086 d867cc42177060ffc747d788ea642eab ""
   "ilustracje/Time_near_black_hole.png" 1702977605 30612 41eb7360fd51f60a74a484eaa441a4a9 ""
   "ilustracje/sceizki_wykres.png" 1703706868 28383 6c95690467bb22178a1b45e17ec75ae4 ""
   "ilustracje/zakazany_donut.jpg" 1702977605 40236 f5ec0e6666f37759af7c298322070a74 ""
-  "main.aux" 1703769298 5268 4327ecd20b4b4e5b1a1d249e475da9da "pdflatex"
-  "main.bbl" 1703769297 4224 6bfe431ef8632ee716716707941f05a2 "bibtex main"
-  "main.out" 1703769298 2476 fcd7b1958b9da231a5f555778cdb3d67 "pdflatex"
+  "main.aux" 1703773894 5268 d5f69cbeff04b4e1d145d2038e34b3f2 "pdflatex"
+  "main.bbl" 1703773893 4224 6bfe431ef8632ee716716707941f05a2 "bibtex main"
+  "main.out" 1703773894 2476 fcd7b1958b9da231a5f555778cdb3d67 "pdflatex"
   "main.tex" 1703717907 836 c5fe21ff7622a75fbe6c4b9c91eaeba2 ""
-  "main.toc" 1703769298 1169 d892b9f94bded928c826328024485eba "pdflatex"
+  "main.toc" 1703773894 1169 2955a984c60a2606757d64d7334e8502 "pdflatex"
   "preamble.tex" 1703760122 831 86856ef22ca6cf360326d442073bcd7a ""
   (generated)
   "main.aux"

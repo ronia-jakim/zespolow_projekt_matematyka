@@ -1,6 +1,6 @@
 \subsection{Analiza pierwiastków równania orbity}
 
-Równanie orbity \ref{zmiana predkosci} jest wielomianem $3$ stopnia o współczynnikach rzeczywistych. Z tego można wywnioskować, że będzie ono miało co najmniej jeden pierwiastek rzeczywisty i jeden lub dwa sprzężone ze sobą pierwiastki zespolone. Zapiszmy je więc w formie
+Równanie orbity \ref{zmiana predkosci} jest wielomianem $3$ stopnia o współczynnikach rzeczywistych. Z tego można wywnioskować, że będzie ono miało co najmniej jeden pierwiastek rzeczywisty i zero lub dwa sprzężone ze sobą pierwiastki zespolone. Zapiszmy je więc w formie
 $$\left(\frac{du}{d\phi}\right)^2=(u-u_1)(u-u_2)(u-u_3).$$
 Dzięki analizie pierwiastków tego równania możemy zbadać maksima, minima oraz punkty przegięcia $u$.
 
@@ -46,7 +46,11 @@ to co najmniej jeden pierwiastek jest ujemny. Z warunku
 $$1=u_1+u_2+u_3$$ 
 wiemy, że dokładnie jeden pierwiastek musi być ujemny i jest nim $u_1$. 
 
-Zauważmy, że odcinek między $u_1$ a $u_2$ na wykresie jest górną połową elipsy - foton oscylowałby między tymi dwoma pierwiastkami, ale ponieważ $u_1$ jest ujemne, to jedynie pierwsza część tej oscylacji faktycznie się wykona. Oznacza to, że $u$ lecąc od $0$, trafi do $u_2$ i zawróci z powrotem do $0$, w kierunku $u_1$. To znaczy, że foton bardzo daleko od czarnej dziury przyleci do $r=\frac{1}{u_2}$, po czym na powrót odleci w kierunku nieskończoności.
+Zauważmy, że jedno z miejsc zerowych $u''$ wypada pomiędzy $u_1$ a $u_2$. Jeśli $y$ będzie pierwiastkiem $u''$, to wówczas dla $u\in (y, u_2)$ druga pochodna przyjmie ujemne wartości i na tym odcinku prędkość $u'$ maleje. Ale ponieważ 
+$$u'(u_2)=,0$$ 
+to znaczy, że prędkość jest ujemna. W punkcie $u=y$ prędkość zaczyna na powrót rosnąć, aż osiągnie $0$ w punkcie $u=u_1$. Stąd prędkość kontynuuje rosnąć, a $u$ zaczyna zbliżać się do $u_2$, gdzie znowu osiągnie $0$ i cząsteczka zacznie się na powrót zapadać. 
+
+W takim razie cząsteczka która wpadnie pomiędzy te dwa miejsca zerowe $u'$, to będzie między nimi oscylować. Jednakże ponieważ $u_1<0$, to jedynie pierwsza część tej oscylacji faktycznie się wykona. Oznacza to, że $u$ lecąc od $0$, trafi do $u_2$ i zawróci z powrotem do $0$, w kierunku $u_1$. To znaczy, że foton bardzo daleko od czarnej dziury przyleci do $r=\frac{1}{u_2}$, po czym na powrót odleci w kierunku nieskończoności.
 
 Enigmatyczny jest przypadek dla $u$ spomiędzy $u_2$ a $u_3$, gdyż w tym przypadku $u'$ przyjmuje wartość zespoloną, jeśli $u_2\neq u_3$. Ponieważ foton jest w stanie pojawić się w dowolnej odległości od czarnej dziury, to musi być $u_2=u_3$ i wówczas istnieje tylko jedna obserwowalna orbita fotonu.
 
