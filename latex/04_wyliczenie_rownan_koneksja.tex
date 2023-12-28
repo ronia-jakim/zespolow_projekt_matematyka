@@ -43,14 +43,7 @@ Zauważmy, że patrząc na podróż fotonu, przesuwamy wraz z nim przestrzeń st
   \caption{Różnica między przestrzeniami stycznymi przesuwanymi po równiku a przestrzeniami stycznymi przesuwanymi po południkach.}\label{rysunek sfera przestrzenie styczne}
 \end{figure}
 
-Idąc przez północny biegun sfery wektory styczne obracają się i na końcu trasy nie zgadzają się z wektorami, które były przesuwane po równiku. Przesuwanie wektorów stycznych wzdłuż krzywej kryje w sobie składanie pól wektorowych - pola zawierającego wektory prędkości na krzywej i pola zawierającego wektory bazowe przestrzeni stycznej. W celu uzgodnienia tego, jak przesuwać przestrzeń styczną wzdłuż krzywej, lub bardziej ogólnie jak składać pola wektorowe, potrzebne jest użycie koneksji Levi-Civity, której dokładniejsza definicja znajduje się w {\color{red}dodatku}.
-
-%\textbf{Koneksja Levi-Civity} jest połączeniem affinicznym, który składowe pola wektorowego przenosi na przestrzeń stycznyną nieskończnenie odległą od rozmaitości. Można o tym myśleć jako o rzutowaniu wektorów stycznych w różnych punktach na daleką kartkę papieru. Dzięki temu możemy porównywać pola wektorowe w dowolnych punktach na rozmaitości. 
-
-%Formalna definicja koneksji Levi-Civity mówi, że jest to połączenie affiniczne $nabla$ które 
-%- zachowuje metrykę, tzn. $nabla g=0$ 
-%- oraz jest pozbawione torsji, tzn. dla dowolnych pól wektorowych $X, Y$ mamy $nabla_X Y-nabla_Y X=[X, Y]$, gdzie $[X, Y]$ jest pochodną Liego $X, Y$.
-%
+Idąc przez północny biegun sfery wektory styczne obracają się i na końcu trasy nie zgadzają się z wektorami, które były przesuwane po równiku. Przesuwanie wektorów stycznych wzdłuż krzywej kryje w sobie składanie pól wektorowych - pola zawierającego wektory prędkości na krzywej i pola zawierającego wektory bazowe przestrzeni stycznej. W celu uzgodnienia tego, jak przesuwać przestrzeń styczną wzdłuż krzywej, lub bardziej ogólnie jak składać pola wektorowe, potrzebne jest użycie koneksji Levi-Civity, której dokładniejsza definicja znajduje się w dodatku \ref{dodatek koneksja}.
 
 Jeśli teraz $x_1,..., x_n$ są lokalnymi współrzędnymi na rozmaitości, a $\partial_1,...,\partial_n$ wektorami bazowymi przestrzeni stycznej, to możemy zdefiniować \textbf{symbole Christoffela} dla koneksji $\nabla$ względem tego układu współrzędnych jako liczby spełniające poniższą równość:
 $$ \nabla_j \partial_k=\Gamma_{j k}^l \partial_l. $$
@@ -61,11 +54,12 @@ Niech więc $x_i$ będzie lokalnym układem współrzędnych na $BH$. Wtedy krzy
 od razu pisać $x_i=x_i(t)$. Równanie różniczkowe opisujące geodezyjną którą podróżuje foton przedstawia się wtedy jako
 %//$ nabla accent(gamma, dot) (t) = Gamma_(i,j)^k (x_1(t),...,x_4(t))frac(d x^i, d t) frac(d x^j, d t) = 0 $
 $$ \ddot{\gamma} = - \Gamma_{i,j}^k \dot{x^i} \dot{x^j} $$
-gdzie $\Gamma_{i,j}^k$ to symbol Christoffela drugiego rodzaju.%//, natomiast $dot$ nad zmienną oznacza branie jej pochodnej względem pewnej affinicznej parametryzacji, która przychodzi razem z koneksją Levi-Civity.
+gdzie $\Gamma_{i,j}^k$ to symbol Christoffela drugiego rodzaju \cite{morseTheory}.%//, natomiast $dot$ nad zmienną oznacza branie jej pochodnej względem pewnej affinicznej parametryzacji, która przychodzi razem z koneksją Levi-Civity.
 
 Dodatkowo, ponieważ foton jest cząsteczką bez masy, geodezyjna którą on podróżuje jest określana \emph{nullową} geodezyjną i musi spełniać dodatkowy warunek
 $$ g_{\mu,\nu} \dot{x^\mu} \dot{x^\nu} = 0 $$
-gdzie $g_{\mu,\nu}$ to wartość tensora metrycznego $g(\mu, \nu)$.
+gdzie $g_{\mu,\nu}$ to wartość tensora metrycznego $g(\mu, \nu)$. Jeśli z kolei zajmowalibyśmy się badaniem cząsteczki z niezerową masą, to wówczas
+$$ g_{\mu,\nu} \dot{x^\mu} \dot{x^\nu} = -1\; (\text{patrz \cite{generalRelWald}}). $$
 
 
 

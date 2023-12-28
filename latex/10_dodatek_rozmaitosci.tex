@@ -1,6 +1,6 @@
-\subsection{O rozmaitościach różniczkowalnych}
+\subsection{O rozmaitościach różniczkowalnych}\label{dodatek rozmaitosci}
 
-Rozmaitości różniczkowalne pozwalają na badanie różnych przestrzeni przez pryzmat przestrzeni $\R^n$. Mówimy, że $M$ jest rozmaitością gładką z atlasem, czyli rodziną map, $\mathcal{A}=\{ (U_\alpha, \phi_\alpha) \}$, jeśli
+Rozmaitości różniczkowalne pozwalają na badanie różnych przestrzeni przez pryzmat przestrzeni $\R^n$. Mówimy, że $M$ jest rozmaitością gładką (różniczkowalną) z atlasem, czyli rodziną map, $\mathcal{A}=\{ (U_\alpha, \phi_\alpha) \}$, jeśli
 \begin{itemize}
   \item zbiory $U_\alpha$ tworzą otwarte pokrycie $M$
   \item odwzorowania $\phi_\alpha:U_\alpha \to \overline{U_\alpha} \subseteq \R^n$ są homeomorfizmami na otwarte podzbiory $\R^n$, a liczba $n$ jest dobrze określona dla $M$
@@ -19,3 +19,40 @@ Klasy równoważności par $[c, t_0]$ to właśnie wektory styczne należące do
 $T M$ to z kolei rozłączna suma po wszystkich przestrzeniach stycznych, którą nazywamy \emph{wiązką styczną}. Bardzo ciekawą własnością przestrzeni stycznych jest ich liniowość \cite{leeSmoothManifolds}, tzn. dla każdego $p \in M$ przestrzeń $T_p M$ jest przestrzenią wektorową wymiaru $n$, a jeśli $(U, \phi)$, $\phi=(\phi_1,...,\phi_n)$ jest mapą wokół $p$, to zbiór
 $$ { \partial \phi_1,..., \partial \phi_n }, $$
 gdzie $\partial \phi_j$ można również oznaczyć $\frac{\partial}{\partial \phi_j}$, jest bazą $T_p M$.
+
+Pole wektorowe to z kolei funkcja $X:M\to TM$ taka, że $X(p)\in T_pM$. Często zapisujemy $X(p)=X_p$. Jeśli teraz $c:I\to M$ jest krzywą na rozmaitości $M$, to mówimy, że pole $X$ jest funkcją gładką $X:I\to TM$ taką, że $X(t)\in T_{c(t)}M$ dla każdego $t\in I$.
+
+\subsection{Koneksja Levi-Civity}
+\label{dodatek koneksja}
+
+Koneksja Levi-Civity jest definiowana jako pewien rodzaj połączenia affinicznego. Zacznijmy więc od zdefiniowania, czym takie połączenie jest. 
+
+Jeśli $M$ jest rozmaitością gładką, a $X$, $Y$ oraz $Z$ są gładkimi polami wektorowymi na niej, to definiujemy połączenie affiniczne jako pole wektorowe $\nabla_XY$, które dla dowolnego punktu $p\in M$ spełnia
+$$(\nabla_XY)_p=\nabla_{X_p}Y,$$
+gdzie napis po prawej stronie oznacza przypisanie wektorowi stycznemu $X_p$ oraz polu wektorowemu nowego wektora stycznego $\nabla_{X_p}Y$. Wymagamy, aby wspomniane przypisanie
+\begin{itemize}
+  \item było dwuliniowe jako funkcja $X_p$ i $Y$ w obrębie przestrzeni stycznej $T_pM$, tzn:
+    \begin{itemize}
+      \item $\nabla_{X_p+Y_p}Z=\nabla_{X_p}Z+\nabla_{Y_p}Z$
+      \item $\nabla_{X_p}(Y+Z)=\nabla_{X_p}Y+\nabla_{X_p}Z$.
+    \end{itemize}
+  \item dla dowolnej gładkiej funkcji $f:M\to\R$ i pola wektorowego, które przez nią powstaje $(fY)_q=f(q)Y$, spełniało równość
+    $$\nabla_{X_p}(fY)=(X_pf)Y_p+\nabla_{f(p)X_p}Y,$$
+    gdzie $X_pf$ oznacza pochodną kierunkową $f$ w kierunku $X_p$: jeśli $X_p=[c, t_0]$, to $X_pf:=[f\circ c, t_0]$ \cite{morseTheory}.
+\end{itemize}
+
+%Niech teraz $M$ będzie rozmaitością gładką wyposażoną w połączenie affiniczne $\nabla$, a $c:I\to M$ niech będzie krzywą na tej rozmaitości parametryzowaną przez zmienną $t$. Wówczas jeśli $X$ jest polem wektorowym wzdłuż tej krzywej, to istnieje jedyne odwzorowanie między $X$ a polem wektorowym $\frac{DX}{dt}$ takie, że $\frac{D}{dt}$ jest liniowe względem $X$. Jeśli istnieje inne pole wektorowe $Y$ takie, że $X(t)=Y(c(t))$, to wówczas \cite{riemannianCarmo}
+%$$\frac{DX}{dt}=\nabla_{\frac{dc}{dt}}Y$$
+
+Niech teraz $M$ będzie rozmaitością riemannowską wyposażoną w tensor metryczny $g$. Wówczas połączenie affiniczne $\nabla$ jest zgodne z metryką wtedy i tylko wtedy gdy dla gładkich pól wektorowych $X,Y,Z$ spełniona jest równość
+$$Xg(Y, Z)=g(\nabla_XY, Z)+g(Y, \nabla_XZ)\; (\text{patrz \cite{riemannianCarmo}}).$$
+
+Na każdej rozmaitości riemannowskiej istnieje jedyne połączenie affiniczne $\nabla$, które 
+\begin{itemize}
+  \item jest zgodne z metryką
+  \item oraz jest symetryczne, tzn. dla dowolnych pól wektorowych $X, Y$ mamy 
+    $$\nabla_X Y-\nabla_Y X=[X, Y],$$ 
+    gdzie $[X, Y]=XY-YX$ jest pochodną Liego $X, Y$ \cite{riemannianCarmo}.
+\end{itemize}
+Takie połączenie affiniczne $\nabla$ jest nazywane \textbf{koneksją Levi-Civity}.
+

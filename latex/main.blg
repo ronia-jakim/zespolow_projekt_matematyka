@@ -11,48 +11,53 @@ Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=8) to 20 items from 10.
 Reallocated singl_function (elt_size=8) to 100 items from 50.
+Warning--empty address in riemannianCarmo
 Warning--empty organization in notatkiUoCSD
 Warning--empty organization in mleczna_droga
+Warning--empty publisher in morseTheory
+Warning--empty address in morseTheory
 Warning--empty address in leeSmoothManifolds
-You've used 3 entries,
+Warning--empty address in mechanics
+Warning--empty address in generalRelWald
+You've used 7 entries,
             5981 wiz_defined-function locations,
-            1492 strings with 18270 characters,
-and the built_in function-call counts, 2324 in all, are:
-= -- 237
-> -- 51
+            1513 strings with 18587 characters,
+and the built_in function-call counts, 5144 in all, are:
+= -- 507
+> -- 119
 < -- 0
-+ -- 14
-- -- 31
-* -- 139
-:= -- 258
-add.period$ -- 16
-call.type$ -- 3
-change.case$ -- 16
-chr.to.int$ -- 3
-cite$ -- 6
-duplicate$ -- 204
-empty$ -- 144
-format.name$ -- 21
-if$ -- 463
++ -- 30
+- -- 59
+* -- 316
+:= -- 579
+add.period$ -- 39
+call.type$ -- 7
+change.case$ -- 38
+chr.to.int$ -- 7
+cite$ -- 15
+duplicate$ -- 500
+empty$ -- 352
+format.name$ -- 49
+if$ -- 1080
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 77
-num.names$ -- 21
-pop$ -- 65
+missing$ -- 10
+newline$ -- 108
+num.names$ -- 49
+pop$ -- 185
 preamble$ -- 1
-purify$ -- 39
+purify$ -- 91
 quote$ -- 0
-skip$ -- 90
+skip$ -- 193
 stack$ -- 0
-substring$ -- 178
-swap$ -- 18
+substring$ -- 375
+swap$ -- 41
 text.length$ -- 19
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 75
-warning$ -- 3
-while$ -- 22
+type$ -- 135
+warning$ -- 8
+while$ -- 50
 width$ -- 0
-write$ -- 105
-(There were 3 warnings)
+write$ -- 179
+(There were 8 warnings)
