@@ -2,7 +2,7 @@ W poniższej pracy dokonamy analizy ruchu fotonów w pobliżu czarnej dziury, kt
 
 \subsection{Symbole Christoffela}
 
-Dla wygody, nie będziemy wyliczać symboli Christoffela wprost z definicji. Zamiast tego, skorzystamy z lagrangianu, który spełnia równanie
+Dla wygody, nie będziemy wyliczać symboli Christoffela wprost z definicji. Zamiast tego, skorzystamy z lagrangianu
 %/*Oczywiście, wyliczyć symbole Christoffela można wprost z ich definicji. Prostsze jest jednak użycie lagrangianu, który spełnia*/
 $$ S = \int L d \lambda, $$
 gdzie $\lambda$ jest afiniczną parametryzacją, a $S$ to działanie, czyli w prostym przypadku cząsteczki poruszającej się wzdłuż pojedynczej krzywej jest to suma iloczynu pędu cząsteczki z fragmentem drogi przebytej \cite{mechanics}. 
@@ -12,9 +12,9 @@ Stosując więc powyższe wiadomości dla przypadku fotonu poruszającego się w
 $$ S = \int d \tau= \int \frac{d \tau}{d \tau} d \tau = \int \frac{\sqrt{d \tau^2}}{d \tau} d \tau = \int \sqrt{g_{\mu, \nu}\dot{x^\mu} \dot{x^\nu}}d \tau = \int L' d \tau. $$
 W takim razie jednym z interesujących nas lagrangianów jest 
 $$L'=\sqrt{g_{\mu, \nu}\dot{x^\mu}\dot{x^\nu}}.$$ 
-Ponieważ lagrangian nie jest unikalny, i nałożenie na niego dowolnej funkcji dalej daje lagrangian, to możemy wybrać
+Ponieważ lagrangian nie jest jedyny, i nałożenie na niego dowolnej funkcji dalej daje lagrangian, to możemy wybrać
 $$L=(L')^2 = g_{\mu,\nu}\dot{x^\mu}\dot{x^\nu}.$$
-Ułatwi to nam wyliczenia korzystające z drugiego równania lagrangianu, to znaczy:
+Ułatwi to nam wyliczenia korzystające z równań Eulera-Lagrange'a, to znaczy:
 $$\frac{d}{ d \tau}\left(\frac{\partial L}{\partial \dot{x^\mu}}\right)= \frac{\partial L}{\partial x^\mu}\; (\text{patrz \cite{mechanics}}). $$
 Podstawiając do $d \tau$ metrykę Schwarzschilda dostajemy poniższy układ równań:
 
@@ -24,7 +24,7 @@ Podstawiając do $d \tau$ metrykę Schwarzschilda dostajemy poniższy układ ró
   \ddot{\theta} &= \sin \theta \cos \theta \dot{\phi}^2 - \frac{2}{ r} \dot{r}\dot{\theta}\\
   \ddot{\phi} &= -\frac{2}{r} \dot{r}\dot{\phi} - 2 \frac{\cos \theta}{ \sin \theta} \dot{\phi}  \dot{\theta} 
 \end{align*}
-Zauważmy, że otrzymane wyżej równania to tak naprawdę geodezyjna w metryce Schwarzschilda. Z lewej strony równości można więc z łatwością sczytać symbole Christoffela - są to współczynniki przy odpowiednich pochodnych. Ponieważ interesuje nas tylko ruch fotonów po płaszczyźnie $\theta=\frac{\pi}{2}$, to $\dot{\theta}=0$, $\cos \theta=0$ i $\sin \theta=1$.
+Zauważmy, że otrzymane wyżej równania to tak naprawdę geodezyjna w metryce Schwarzschilda. Z lewej strony równości można więc z łatwością odczytać symbole Christoffela - są to współczynniki przy odpowiednich pochodnych. Ponieważ interesuje nas tylko ruch fotonów po płaszczyźnie $\theta=\frac{\pi}{2}$, to $\dot{\theta}=0$, $\cos \theta=0$ i $\sin \theta=1$.
 
 Symbole Christoffela w interesującym nas przypadku są więc równe
 \begin{align*}
@@ -37,7 +37,7 @@ Symbole Christoffela w interesującym nas przypadku są więc równe
 
 \subsection{Równanie orbity}
 
-Korzystając jeszcze raz z drugiego równania lagrangianu, dostajemy
+Korzystając jeszcze raz z równań Eulera-Langrange'a, dostajemy
 $$ \frac{d}{d\tau}(2r^2\dot{\phi})=0 $$
 $$ \frac{d}{d\tau}\left(2\frac{r-1}{r}\dot{t}\right)=0 $$
 czyli 
@@ -96,7 +96,7 @@ wyraz $\frac{1}{b^2}$ stanie się wyrazem wolnym, znikającym po różniczkowani
   \caption{Ścieżki fotonów w pobliżu czarnej dziury o masie $M=\frac{1}{2}$ i promieniu Schwarzschilda $r_s=1$ ($c=1=G$) uzyskane przy pomocy języka Python.}\label{wykres fotonow}
 \end{figure}
 
-Powyższe równanie \ref{zmiana predkosci} w jasny sposób pokazuje, że orbita stacjonarna w przypadku czarnej dziury o promieniu Schwarzschilda $1$ pojawia się dla $r=\frac{3}{2}$. Wspomniana orbita została zaznaczona na wykresie \ref{wykres fotonow}, który prezentuje również rozmiar czarnej dziury (czarne koło pośrodku). Równanie \ref{zmiana predkosci} zostało rozwiązane przy pomocy funkcji \verb+odeint+ z biblioteki \verb+scipy+ języka Python i trajektorie pięciu fotonów, z czego część nie zapada się w czarną dziurę, zostały pokazane na wykresie \ref{wykres fotonow}
+Powyższe równanie (\ref{zmiana predkosci}) w jasny sposób pokazuje, że orbita stacjonarna w przypadku czarnej dziury o promieniu Schwarzschilda $1$ pojawia się dla $r=\frac{3}{2}$. Wspomniana orbita została zaznaczona na wykresie \ref{wykres fotonow}, który prezentuje również rozmiar czarnej dziury (czarne koło pośrodku). Równanie (\ref{zmiana predkosci}) zostało rozwiązane przy pomocy funkcji \verb+odeint+ z biblioteki \verb+scipy+ języka Python i trajektorie pięciu fotonów, z czego część nie zapada się w czarną dziurę, zostały pokazane na wykresie \ref{wykres fotonow}
 
 
 

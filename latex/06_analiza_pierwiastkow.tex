@@ -1,6 +1,6 @@
 \subsection{Analiza pierwiastków równania orbity}
 
-Równanie orbity \ref{zmiana predkosci} jest wielomianem $3$ stopnia o współczynnikach rzeczywistych. Z tego można wywnioskować, że będzie ono miało co najmniej jeden pierwiastek rzeczywisty i zero lub dwa sprzężone ze sobą pierwiastki zespolone. Zapiszmy je więc w formie
+Prawa strona równania orbity \ref{zmiana predkosci} jest wielomianem $3$ stopnia o współczynnikach rzeczywistych. Z tego można wywnioskować, że będzie ono miało co najmniej jeden pierwiastek rzeczywisty i zero lub dwa sprzężone ze sobą pierwiastki zespolone. Zapiszmy je więc w formie
 $$\left(\frac{du}{d\phi}\right)^2=(u-u_1)(u-u_2)(u-u_3).$$
 Dzięki analizie pierwiastków tego równania możemy zbadać maksima, minima oraz punkty przegięcia $u$.
 
@@ -47,8 +47,8 @@ $$1=u_1+u_2+u_3$$
 wiemy, że dokładnie jeden pierwiastek musi być ujemny i jest nim $u_1$. 
 
 Zauważmy, że jedno z miejsc zerowych $u''$ wypada pomiędzy $u_1$ a $u_2$. Jeśli $y$ będzie pierwiastkiem $u''$, to wówczas dla $u\in (y, u_2)$ druga pochodna przyjmie ujemne wartości i na tym odcinku prędkość $u'$ maleje. Ale ponieważ 
-$$u'(u_2)=,0$$ 
-to znaczy, że prędkość jest ujemna. W punkcie $u=y$ prędkość zaczyna na powrót rosnąć, aż osiągnie $0$ w punkcie $u=u_1$. Stąd prędkość kontynuuje rosnąć, a $u$ zaczyna zbliżać się do $u_2$, gdzie znowu osiągnie $0$ i cząsteczka zacznie się na powrót zapadać. 
+$$u'(u_2)=0$$
+to znaczy, że prędkość jest ujemna. W punkcie $u=y$ prędkość zaczyna na powrót rosnąć, aż osiągnie $0$ w punkcie $u=u_1$. Stąd prędkość kontynuuje wzrost, a $u$ zaczyna zbliżać się do $u_2$, gdzie znowu osiągnie $0$ i cząsteczka zacznie się na powrót zapadać.
 
 W takim razie cząsteczka która wpadnie pomiędzy te dwa miejsca zerowe $u'$, to będzie między nimi oscylować. Jednakże ponieważ $u_1<0$, to jedynie pierwsza część tej oscylacji faktycznie się wykona. Oznacza to, że $u$ lecąc od $0$, trafi do $u_2$ i zawróci z powrotem do $0$, w kierunku $u_1$. To znaczy, że foton bardzo daleko od czarnej dziury przyleci do $r=\frac{1}{u_2}$, po czym na powrót odleci w kierunku nieskończoności.
 
@@ -56,4 +56,4 @@ Enigmatyczny jest przypadek dla $u$ spomiędzy $u_2$ a $u_3$, gdyż w tym przypa
 
 Jeśli z kolei tylko jeden pierwiastek jest rzeczywisty, to musi on być ujemny: niech $u_1$ będzie jedynym rzeczywistym pierwiastkiem, a $u_2=x+yi=\overline{u_3}$. Wtedy
 $$-\frac{1}{b^2}=u_1u_2u_3=u_1(x+yi)(x-y_i)=u_1\underbrace{(x^2+y^2)}_{>0}$$
-i pozostaje jedynie $u_1<0$. To znowu znaczyłoby, że nie istnieje żadna orbita stacjonarna, co jest niezgodne z informacją o trasie fotonu wyciągniętą z równania $u''$..
+i pozostaje jedynie $u_1<0$. To znowu znaczyłoby, że nie istnieje żadna orbita stacjonarna, co jest niezgodne z informacją o trasie fotonu wywnioskowaną z równania $u''$..
