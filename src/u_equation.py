@@ -1,10 +1,11 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from scipy.integrate import odeint
 from math import hypot
 
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.integrate import odeint
 
-M=0.5
+M = 0.5
+
 
 def u_derivatives(r, phi):
     return [r[1], -r[0] + (3/2) * r[0] ** 2]
@@ -27,7 +28,7 @@ phi = np.arange(0, 8, 1e-2)
 # start_values = np.append(start_values, 1.25)
 start_values = np.array([1.25, 1.5, 2, 3, 4])
 for i in start_values:
-    u, u_der = odeint(u_derivatives, [1/i, 0], phi).T
+    u, u_der = odeint(u_derivatives, [1/i, 0.01], phi).T
 
     x = 1/u * np.cos(phi)
     y = 1/u * np.sin(phi)
