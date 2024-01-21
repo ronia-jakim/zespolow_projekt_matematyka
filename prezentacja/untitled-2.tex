@@ -1,0 +1,303 @@
+\documentclass[polish, 9pt, xcolor=table, hyperref={pdfpagemode=FullScreen}]{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Warsaw}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+
+
+\usepackage{polski}
+% or whatever
+
+\usepackage{babel}
+\usepackage[utf8]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\usepackage{tikz}
+\usetikzlibrary{cd, patterns, patterns.meta, decorations.pathmorphing}
+
+\newcommand{\R}{\mathbb{R}}
+
+
+\title[Czarne Dziury Schwarzchilda] % (optional, use only with long paper titles)
+{Modelowanie horyzontów zdarzeń czarnych dziur przy użyciu metryki Schwarzchilda}
+
+\subtitle
+{Rozwiązania analityczne i numeryczne } % (optional)
+
+\author[Aleksandra Niedziela, Weronika Jakimowicz] % (optional, use only with lots of authors)
+{Aleksandra Niedziela \and Weronika Jakimowicz}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Uniwersytet Wrocławski] % (optional, but mostly needed)
+{
+  Wydział Matematyki i Informatyki\\
+  Uniwersytet Wrocławski
+ }
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[Short Occasion] % (optional)
+{22.01.2024 / Zespołowy Projekt Specjalnościowy}
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Spis treści}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Spis treści}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+\section{Czym są czarne dziury?}
+
+\subsection[Czarne Dziura Schwarzchilda]{Czarne Dziury Schwarzchilda}
+
+\begin{frame}{Czarne Dziura Schwarzchilda}
+  % - A title should summarize the slide in an understandable fashion
+  %   for anyone how does not follow everything on the slide itself.
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item
+	Wyróżniamy cztery rodzaje czarnych dziur: 
+\begin{itemize}
+\item
+	Schwarzchilda
+\item 
+	Kerra 
+\item
+	Reissner–Nordströma
+\item 
+	Kerra–Newmana
+\end{itemize}
+\item 
+	Są to obiekty o nieskończonej gęstości, tak masywne, że zakrzywią czasoprzestrzeń wokół siebie.
+\item 
+	Powstają podczas śmierci gwiazdy w wybuchu supernowej. 
+\item
+	Czarne dziury są inspiracją dla wielu autorów science fiction - \textit{Interstellar}.
+\end{itemize}
+\end{column}
+	
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\centering
+ \includegraphics[width=0.7\textwidth]{ilustracje/Time_near_black_hole.png}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{ilustracje/zakazany_donut.jpg}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\subsection{Czarna Dziura jako rozmaitość Riemannowska}
+
+\begin{frame}{Czarna Dziura jako rozmaitość Riemannowska}
+
+\begin{block}{Rozmaitość}
+Rozmaitość to pojęcie matematyczne opisujące przestrzeń $M$, która wokół każdego punktu $p \in M$ posiada otwarte otoczenie $U_p$, które przypomina pewien podzbiór przestrzeni $\R^n$.
+\end{block}
+
+Schwarzchild opisywał czarną dziuruę, modelując przestrzeń wokół niej jako rozmaitość różniczkowalną z tensorem metrycznym, czyli rozmaitość Riemannowską.
+
+\end{frame}
+
+\begin{frame}{Metryka Schwarzchilda}
+
+Metryka Schwarzchilda jest zdefiniowana na podzbiorze $\R \times (0, +\infty) \times S^2$ o sygnaturze $(-, +, +, +)$, który jest standardowo zapisywany jako
+
+$$ g = c^2 d \tau^2 = -\frac{r - r_s}{r}\cdot c^2d t^2 + \left( \frac{r - r_s}{r}\right)^{-1} d r^2 + r^2(d \theta^2 + \sin^2(\theta) d \phi^2) $$
+
+lub w postaci macierzy:
+
+$$
+g_{\mu, \nu} = \begin{bmatrix}
+  -\frac{1 - r_s}{r}\cdot c^2 & 0                               & 0   & 0 \\
+  0                 & \left(\frac{1 - r_s}{r}\right)^{-1} & 0   & 0 \\
+  0                 & 0                                   & r^2 & 0 \\ 
+  0                 & 0                                   & 0   & r^2 \sin^2(\theta)
+\end{bmatrix}, 
+$$
+
+gdzie 
+\begin{itemize}
+  \item $r_s$ to promień Schwarzschilda określonej czarnej dziury, 
+  \item $c$ oznacza prędkość światła, 
+  \item $\tau$ to czas właściwy (czyli mierzony w pobliżu czarnej dziury), 
+  \item $t$ to czas bezwzględny (mierzony nieskończenie daleko od czarnej dziury), 
+  \item $\theta$ to kąt po południku, 
+  \item a $\phi$ to kąt po równoleżniku.
+\end{itemize}
+
+\end{frame}
+
+\section{Szybki Kurs Geometrii}
+
+\subsection{Proste ścieżki na zakrzywionych powierzchniach}
+
+\begin{frame}{Proste ścieżki na zakrzywionych powierzchniach}
+Oznaczmy przez $BH$ rozmaitość opisującą czasoprzestrzeń wokół rozważanej czarnej dziury Schwarzschilda, która zazwyczaj ma postać
+$$ BH = \R \times (0,+\infty) \times S^2 $$
+Wówczas podróż fotonu jest opisywana przez krzywą
+$$ \gamma:I \to BH $$
+gdzie $I$ jest pewnym odcinkiem, a nawet może być całą prostą $\R$. Ponieważ foton porusza się z prędkością światła i nie przyspiesza, to wiemy, że
+$$\frac{d^2 \gamma} {d t^2}=0.$$ 
+\end{frame}
+
+\begin{frame}
+Metryka zadana na $BH$ mówi nam, że przestrzeń wokół czarnej dziury nie jest do końca taka jak przestrzeń $\R^4$. Jest ona nieco zakrzywiona i to właśnie to zakrzywienie czasoprzestrzeni będzie wpływać na obserwowane przez nas zakrzywienie trasy fotonu w pobliżu czarnej dziury.
+\renewcommand{\figurename}{Rysunek}
+\begin{figure}[h] 
+  \centering 
+  \vspace{1cm}
+  \begin{tikzpicture}
+    \draw (0, 0) circle (2);
+    \draw (-2, 0) arc (180:360:2 and 0.7);
+    \draw[dotted] (-2, 0) arc (180:0:2 and 0.7);
+
+    \draw[very thick, ->, orange] (0, -0.7) arc (270:320:2 and 0.7);
+    \filldraw[orange] (0, -0.7) circle (2pt);
+  \end{tikzpicture}
+  \caption{Cząsteczka poruszająca się po sferze $S^2$.}\label{czasteczka po sferze}
+  \vspace{1cm}
+\end{figure}
+\end{frame}
+
+\subsection{Równanie geodezyjnej}
+
+\begin{frame}{Równanie geodezyjnej}
+
+Ponieważ foton nie przyspiesza podróżując po przestrzeni wokół czarnej dziury, tzn. druga pochodna krzywej opisującej jego trasę jest stale równa zero, to mówimy, że trasa zakreślana przez foton jest \textbf{linią geodezyjną} na rozmaitości $BH$.
+
+Patrząc na podróż fotonu, przesuwamy wraz z nim przestrzeń styczną, zawierającą wektor prędkości, po krzywej którą ów foton zatacza. Patrząc znów na prosty przykład na $S^2$, przyjrzyjmy się co się dzieje z wektorami stycznymi kiedy przesuwamy je na dwa sposoby między tymi samymi punktami leżącymi na równiku, jak na rysunku
+
+\end{frame}
+
+\begin{frame}{Symbole Christofela}
+
+\begin{figure}[h]
+  \centering 
+	\begin{tikzpicture}[scale = 0.5]
+    \draw (0, 0) circle (3);
+    \draw (-3, 0) arc (180:360:3 and 1.275);
+    \draw[dotted] (-3, 0) arc (180:0:3 and 1.275);
+
+    \draw[orange, ultra thick, ->] (0, -1.275) arc (270:300:3 and 1.275);
+    \draw[orange, ultra thick] (0, -1.275) arc(270:240:3 and 1.275);
+
+    \filldraw[orange] (-1.5, -1.1025) circle (1.5pt);
+    \filldraw[orange] (1.5, -1.1025) circle (1.5pt);
+
+    \draw[cyan, ultra thick] (-1.5, -1.1025) arc (180:135:5.25 and 5.85);
+    \draw[cyan, ultra thick, <-] (1.5, -1.1025) arc (0:45:5.25 and 5.85);
+
+    \filldraw[cyan] (0, 3) circle (1.5pt);
+
+    \draw[->, very thick] (-1.5, -1.1025)--(-1.35, 0) node [midway, left] {$e_1$};
+    \draw[->, very thick] (-1.5, -1.1025)--(-0.45, -1.275) node [midway, below] {$e_2$};
+
+    \draw[->, very thick, blue] (0, 3)--(0.975, 3) node [midway, above] {$e_2$};
+    \draw[->, very thick, blue] (0, 3)--(0, 2.025) node [midway, left] {$e_1$};
+
+    \draw[->, very thick, orange] (1.5, -1.1025)--(1.35, 0) node [midway, left] {$e_2$};
+    \draw[->, very thick, orange] (1.5, -1.1025)--(2.55, -1.1025) node [midway, below] {$e_1$};
+    
+    \draw[->, very thick, blue, dashed] (1.5, -1.1025)--(2.55, -1.1025) node [midway, above] {$e_2$};
+    \draw[->, very thick, blue] (1.5, -1.1025)--(1.35, -2.205) node [midway, left] {$e_1$};
+  \end{tikzpicture}
+  \caption{Różnica między przestrzeniami stycznymi przesuwanymi po równiku a przestrzeniami stycznymi przesuwanymi po południkach.}\label{rysunek sfera przestrzenie styczne}
+\end{figure}
+
+\end{frame}
+
+\section{Matematyczna podróż do czarnej dziury}
+
+\begin{frame}{Summary}
+
+  % Keep the summary *very short*.
+  \begin{itemize}
+  \item
+    The \alert{first main message} of your talk in one or two lines.
+  \item
+    The \alert{second main message} of your talk in one or two lines.
+  \item
+    Perhaps a \alert{third message}, but not more than that.
+  \end{itemize}
+  
+  % The following outlook is optional.
+  \vskip0pt plus.5fill
+  \begin{itemize}
+  \item
+    Outlook
+    \begin{itemize}
+    \item
+      Something you haven't solved.
+    \item
+      Something else you haven't solved.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
+
+
