@@ -1,4 +1,8 @@
 \babel@toc {polish}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{First Subsection Name}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Second Subsection}{11}{0}{1}
+\beamer@sectionintoc {1}{Czym są czarne dziury?}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Czarne Dziury Schwarzchilda}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Czarna Dziura jako rozmaitość Riemannowska}{5}{0}{1}
+\beamer@sectionintoc {2}{Szybki Kurs Geometrii}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Proste ścieżki na zakrzywionych powierzchniach}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Równanie geodezyjnej}{10}{0}{2}
+\beamer@sectionintoc {3}{Matematyczna podróż do czarnej dziury}{12}{0}{3}
